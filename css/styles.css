@@ -723,8 +723,7 @@ p {
   line-height: 1.2;
 }
 .choose-me__content .cards .card p {
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
 }
 .choose-me__content .cards .card:hover {
   transform: translateY(-0.25rem) scale(1.02);
