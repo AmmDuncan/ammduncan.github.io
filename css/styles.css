@@ -222,10 +222,10 @@ a {
  * ======================================================================*/
 html {
   font-size: 18px;
+  font-family: "Poppins", "Segoe Ui", "Gill Sans Mt", sans-serif;
 }
 
 body {
-  font-family: "Poppins", "Segoe Ui", "Gill Sans Mt", sans-serif;
   color: #0f0e1b;
 }
 
