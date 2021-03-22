@@ -242,7 +242,7 @@ h2 {
 
 p {
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 @media (min-width: 1400px) {
   p {
@@ -692,7 +692,7 @@ p {
 .choose-me__content .cards .card {
   display: grid;
   grid-template-rows: 5rem minmax(0.8rem, 2.5rem) minmax(3rem, auto);
-  row-gap: 1rem;
+  row-gap: 1.5rem;
   min-height: 4rem;
   box-shadow: 0 1.5rem 2.5rem -0.5rem rgba(30, 5, 70, 0.3);
   padding: 2rem 2rem;
@@ -719,7 +719,7 @@ p {
 .choose-me__content .cards .card h3 {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1.563rem;
   font-weight: 500;
   line-height: 1.2;
 }
