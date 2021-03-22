@@ -636,8 +636,7 @@ p {
         &:hover {
             transform: translateY(-.25rem) scale(1.02);
         }
-
-            
+        
         @media (max-width: $desk-sm) {
             row-gap: 1rem;
         }
