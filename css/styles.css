@@ -182,7 +182,6 @@ p {
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.25rem;
   transition: 0.3 ease-in-out;
 }
 .btn img {
@@ -432,7 +431,6 @@ p {
 .hero .content h3 {
   margin: 1rem 0;
   font-size: 1.25rem;
-  font-size: 1.563rem;
   font-weight: 400;
 }
 .hero .content h1 {
