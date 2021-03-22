@@ -731,7 +731,7 @@ p {
 }
 @media (max-width: 992px) {
   .choose-me__content .cards .card {
-    row-gap: 0.5rem;
+    row-gap: 1rem;
   }
 }
 @media (max-width: 992px) {
