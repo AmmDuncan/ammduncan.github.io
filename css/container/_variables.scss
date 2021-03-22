@@ -1,0 +1,41 @@
+/* COLORS */
+$color-primary: rgb(82, 34, 208);
+$color-primary-dark: rgb(52, 04, 178);
+$color-primary-light: #ded6f1;
+$color-secondary: #dd9742;
+$color-text: #0f0e1b;
+$color-white: #ffffff;
+
+// color-codes
+$color-primary-code: 82, 34, 208;
+$color-primary-dark-code: 52, 04, 178;
+$color-secondary-code: 221, 151, 66;
+
+
+/* FONT */
+// sizes
+$font-size-display: 3.815rem;
+$font-size-display-sm: 3.5rem;
+$font-size-h1: 3.052rem;
+$font-size-h1-sm: 2.8rem;
+$font-size-h2: 2.441rem;
+$font-size-h2-sm: 1.953rem;
+$font-size-h3: 1.563rem;
+$font-size-body-larger: 1.25rem;
+
+// family
+$font-family-heading: "poppins", "segoe ui", "gill  sans mt", sans-serif;
+
+
+/* BREAKPOINTS */
+$mob-sm: 320px;
+$mob-md: 480px;
+$mob-lg: 575px;
+
+$tab-sm: 640px;
+$tab-md: 767px;
+$tab-lg: 820px;
+
+$desk-sm: 992px;
+$desk-md: 1400px;
+$desk-lg: 1920px;
