@@ -58,13 +58,13 @@ h2 {
     font-weight: 600;
 
     @media (max-width: $mob-md) {
-        font-size: $font-size-h1-sm;
+        font-size: $font-size-h2;
     }
 }
 
 p {
     line-height: 1.7;
-    font-size: 1rem;
+    font-size: 1.1rem;
 
     @media (min-width: $desk-md) {
         font-size: $font-size-body-larger;
@@ -477,7 +477,7 @@ p {
             line-height: 1.6;
 
             p {
-                font-size: $font-size-body-larger;
+                // font-size: $font-size-body-larger;
             }
 
             h3 {
@@ -602,10 +602,10 @@ p {
     .card {
         display: grid;
         grid-template-rows: 8rem minmax(.8rem,auto) minmax(3rem, auto);
-        row-gap: 1.25rem;
+        row-gap: 1rem;
         min-height: 4rem;
         box-shadow: 0 1.5rem 2.5rem -0.5rem rgba(30, 5, 70, 0.30);
-        padding: 2rem 2.5rem;
+        padding: 2.25rem 2.25rem 2.5rem;
         background: $color-primary;
         border-radius: 4px;
         color: #fff;
@@ -640,7 +640,7 @@ p {
         p {
             color: rgba($color-white, .7);
             // font-weight: 300;
-            font-size: $font-size-body-larger;
+            // font-size: $font-size-body-larger;
 
         }
     
@@ -690,9 +690,13 @@ p {
         flex-flow: column;
   
         p {
-            padding-right: 1rem;
-            font-size: $font-size-body-larger;
+            padding-right: 3rem;
+            // font-size: $font-size-body-larger;
             line-height: 1.7;
+
+            @media (max-width: $tab-md) {
+                padding-right: 0;
+            }
         }
   
         .cta {
