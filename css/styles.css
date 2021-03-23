@@ -616,7 +616,7 @@ p {
 }
 .choose-me__content .cards .card {
   display: grid;
-  grid-template-rows: 8rem minmax(0.8rem, auto) minmax(3rem, auto);
+  grid-template-rows: 8rem minmax(0.8rem, 3.5rem) minmax(3rem, auto);
   row-gap: 1rem;
   min-height: 4rem;
   box-shadow: 0 1.5rem 2.5rem -0.5rem rgba(30, 5, 70, 0.3);
@@ -634,8 +634,8 @@ p {
   height: 100%;
 }
 .choose-me__content .cards .card .img lord-icon {
-  width: 120px;
-  height: 120px;
+  width: 112px;
+  height: 112px;
   align-self: center;
   margin-left: -1rem;
   margin-bottom: -0.5rem;
