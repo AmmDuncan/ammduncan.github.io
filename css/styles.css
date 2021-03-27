@@ -277,9 +277,9 @@ p {
   color: #5222d0;
 }
 .navbar .nav__list {
-  height: 100%;
+  align-self: stretch;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   transition: 0.2s ease-in-out;
 }
 .navbar .nav__list li {
@@ -616,7 +616,7 @@ p {
 }
 .choose-me__content .cards .card {
   display: grid;
-  grid-template-rows: 8rem minmax(0.8rem, 3.5rem) minmax(3rem, auto);
+  grid-template-rows: 7rem minmax(0.8rem, 3.5rem) minmax(3rem, auto);
   row-gap: 1rem;
   min-height: 4rem;
   box-shadow: 0 1.5rem 2.5rem -0.5rem rgba(30, 5, 70, 0.3);
@@ -634,15 +634,15 @@ p {
   height: 100%;
 }
 .choose-me__content .cards .card .img lord-icon {
-  width: 112px;
-  height: 112px;
+  width: 104px;
+  height: 104px;
   align-self: center;
   margin-left: -1rem;
-  margin-bottom: -0.5rem;
+  margin-bottom: 0.5rem;
 }
 .choose-me__content .cards .card h3 {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   font-size: 1.563rem;
   font-weight: 500;
   line-height: 1.2;
