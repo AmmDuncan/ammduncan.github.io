@@ -324,7 +324,7 @@ p {
 }
 @media (max-width: 767px) {
   .navbar .nav .container {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
