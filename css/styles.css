@@ -266,7 +266,6 @@ p {
   justify-content: space-between;
 }
 .navbar .nav__brand {
-  margin-left: 2rem;
   font-size: 1.563rem;
   font-weight: 600;
   text-transform: uppercase;
