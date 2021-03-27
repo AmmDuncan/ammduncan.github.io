@@ -139,7 +139,7 @@ p {
   /* positioning */
   position: fixed;
   width: 100%;
-  height: 65px;
+  height: auto;
   z-index: 1000;
 
   /* display and box-model */
@@ -147,7 +147,7 @@ p {
   box-shadow: 0 0.8rem 1.5rem rgba($color-primary-dark, 0.1);
 
   /* other */
-  background: rgba($color-white, 0.77);
+  background: rgba($color-white, 0.85);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   -moz-backdrop-filter: blur(1rem);
@@ -164,7 +164,6 @@ p {
 .navbar .nav {
   /* positioning */
   height: 100%;
-
   /* display and box-model */
   display: flex;
   align-items: center;
@@ -182,7 +181,7 @@ p {
 
   &__brand {
     // margin-left: 2rem;
-    font-size: $font-size-h3;
+    font-size: $font-size-body-larger;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -209,7 +208,7 @@ p {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     color: #303030;
-    font-size: $font-size-body-larger;
+    // font-size: $font-size-body-larger;
 
     &:hover {
       color: $color-primary;
