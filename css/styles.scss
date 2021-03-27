@@ -263,7 +263,7 @@ p {
     .nav__brand__container {
       flex: 65px;
       align-items: center;
-      padding-left: 2rem;
+      padding-left: 5%;
 
       .nav__opener {
         display: flex;
@@ -291,7 +291,7 @@ p {
     .nav__link {
       width: 100%;
       padding-left: 0;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 4%;
       // font-size: $font-size-body-larger;
 
       .active {

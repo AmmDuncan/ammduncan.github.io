@@ -337,7 +337,7 @@ p {
   .navbar .nav .nav__brand__container {
     flex: 65px;
     align-items: center;
-    padding-left: 2rem;
+    padding-left: 5%;
   }
   .navbar .nav .nav__brand__container .nav__opener {
     display: flex;
@@ -361,7 +361,7 @@ p {
   .navbar .nav .nav__link {
     width: 100%;
     padding-left: 0;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 4%;
   }
   .navbar .nav .nav__link .active {
     background: #3404b2;
