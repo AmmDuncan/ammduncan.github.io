@@ -247,6 +247,9 @@ p {
   .navbar {
     height: auto;
   }
+  .navbar .container {
+    width: 100%;
+  }
 }
 
 .navbar .nav {
@@ -322,12 +325,6 @@ p {
   width: 1.5rem;
   align-self: flex-end;
 }
-@media (max-width: 767px) {
-  .navbar .nav .container {
-    max-width: 100%;
-  }
-}
-
 /* -------------------------------------
  * Collapse Navbar on Tablets and below 
  * -------------------------------------*/
@@ -340,6 +337,7 @@ p {
   .navbar .nav .nav__brand__container {
     flex: 65px;
     align-items: center;
+    padding-left: 2rem;
   }
   .navbar .nav .nav__brand__container .nav__opener {
     display: flex;
@@ -375,9 +373,6 @@ p {
   }
   .navbar.open .nav__opener {
     height: 2.5rem;
-  }
-  .navbar.open .nav__opener .bar {
-    margin-right: 0.5rem;
   }
   .navbar.open .nav__opener .bar:nth-child(1) {
     transform: rotate(-45deg);

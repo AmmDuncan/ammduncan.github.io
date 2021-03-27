@@ -154,6 +154,10 @@ p {
 
   @media (max-width: $tab-md) {
     height: auto;
+
+    .container {
+      width: 100%;
+    }
   }
 }
 
@@ -245,9 +249,6 @@ p {
   }
 
   @media (max-width: $tab-md) {
-    .container {
-      max-width: 100%;
-    }
   }
 }
 
@@ -263,6 +264,7 @@ p {
     .nav__brand__container {
       flex: 65px;
       align-items: center;
+      padding-left: 2rem;
 
       .nav__opener {
         display: flex;
@@ -308,7 +310,7 @@ p {
     &__opener {
       height: 2.5rem;
       .bar {
-        margin-right: 0.5rem;
+        // margin-right: 0.5rem;
 
         &:nth-child(1) {
           transform: rotate(-45deg);
