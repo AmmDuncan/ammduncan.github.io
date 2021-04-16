@@ -365,7 +365,7 @@ p {
   background-position: left middle;
   transition: 0.5 ease-in-out;
 
-  @media (max-width: $mob-lg) {
+  @media (max-width: $tab-sm) {
     background-position: center;
     background-image: linear-gradient(
         50deg,
@@ -408,8 +408,8 @@ p {
       font-size: $font-size-display-sm;
     }
 
-    @media (max-width: $mob-lg) {
-      font-size: $font-size-h1-sm;
+    @media (max-width: $tab-sm) {
+      font-size: $font-size-h1;
     }
   }
 
