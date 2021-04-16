@@ -153,6 +153,7 @@ body {
 h2 {
   font-size: 3.052rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 @media (max-width: 480px) {
   h2 {
@@ -508,8 +509,7 @@ p {
   margin-bottom: 1rem;
   font-size: 1.953rem;
   text-transform: capitalize;
-  line-height: 1.3;
-  font-weight: 500;
+  line-height: 1.5;
 }
 @media (max-width: 575px) {
   .what-i-do__content .child .text h3 {
@@ -522,13 +522,14 @@ p {
   align-items: center;
 }
 .what-i-do__content .child .img img {
+  max-width: 35rem;
   width: 80%;
   margin: 0 10%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .what-i-do__content .child {
     width: 100%;
-    max-width: 560px;
+    max-width: 480px;
     flex-flow: column;
     margin-left: auto;
     margin-right: auto;
@@ -547,7 +548,7 @@ p {
 .what-i-do__content .dynamic-sites .child .img {
   order: -1;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .what-i-do__content .dynamic-sites .child .text {
     order: 1;
   }
@@ -660,7 +661,7 @@ p {
 }
 @media (max-width: 992px) {
   .choose-me__content .cards {
-    max-width: 600px;
+    max-width: 480px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin-left: auto;
@@ -711,10 +712,10 @@ p {
 .work__content .img img {
   width: 100%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .work__content {
     width: 90%;
-    max-width: 580px;
+    max-width: 480px;
     flex-flow: column;
   }
 }
