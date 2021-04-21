@@ -120,22 +120,22 @@ a {
  * ======================================================================*/
 @font-face {
   font-family: "Poppins";
-  src: "Poppins-Regular.woff2" format("woff2"), "Poppins-Regular.ttf" format("ttf");
+  src: url("Poppins-Regular.woff2") format("woff2"), url("Poppins-Regular.ttf") format("ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Poppins";
-  src: "./Poppins-Light.woff2" format("woff2"), "./Poppins-Light.ttf" format("ttf");
+  src: url("./Poppins-Light.woff2") format("woff2"), url("./Poppins-Light.ttf") format("ttf");
   font-weight: 300;
 }
 @font-face {
   font-family: "Poppins";
-  src: "./Poppins-Medium.woff2" format("woff2"), "./Poppins-Medium.ttf" format("ttf");
+  src: url("./Poppins-Medium.woff2") format("woff2"), url("./Poppins-Medium.ttf") format("ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: "Poppins";
-  src: "./Poppins-SemiBold.woff2" format("woff2"), "./Poppins-SemiBold.ttf" format("ttf");
+  src: url("./Poppins-SemiBold.woff2") format("woff2"), url("./Poppins-SemiBold.ttf") format("ttf");
   font-weight: 600;
 }
 /* ======================================================================
