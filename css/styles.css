@@ -430,7 +430,7 @@ p {
 }
 
 .hero .content {
-  max-width: 50rem;
+  max-width: 45rem;
   padding-top: 20vh;
   margin: auto;
   display: flex;
@@ -450,7 +450,7 @@ p {
 }
 .hero .content h1 {
   margin-bottom: 1rem;
-  font-size: 4.61rem;
+  font-size: 4.81rem;
   font-weight: 600;
   line-height: 1.1;
   animation: bounce-in 0.5s ease-out forwards;
@@ -466,7 +466,7 @@ p {
 }
 @media (max-width: 1400px) {
   .hero .content h1 {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -491,6 +491,11 @@ p {
   .hero .content .ctas .btn--primary {
     margin-bottom: 1rem;
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero .content {
+    max-width: 35rem;
   }
 }
 
