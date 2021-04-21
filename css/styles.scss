@@ -369,13 +369,13 @@ p {
   transition: 0.5s ease-in-out;
 
   @media (max-width: $tab-sm) {
-    background-position: center;
+    background-position: center top;
     background-image: radial-gradient(
         circle,
         rgba($color-primary-light, 0.4) 45%,
         rgba($color-primary-light, 0.7)
       ),
-      url("../img/herobg-center.png");
+      url("../img/herobg-center-mob.png");
   }
 }
 
@@ -455,6 +455,7 @@ p {
  * ======================================================================*/
 .what-i-do {
   background: #ffffff;
+  padding-top: 7rem;
   padding-bottom: 3rem;
 }
 
@@ -598,7 +599,7 @@ p {
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   column-gap: 1.5rem;
-  max-width: 1144px;
+  //max-width: 1140px;
   margin: auto;
   position: relative;
   padding-bottom: 4rem;

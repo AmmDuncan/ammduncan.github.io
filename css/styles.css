@@ -424,8 +424,8 @@ p {
 }
 @media (max-width: 640px) {
   .header {
-    background-position: center;
-    background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center.png");
+    background-position: center top;
+    background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center-mob.png");
   }
 }
 
@@ -499,6 +499,7 @@ p {
  * ======================================================================*/
 .what-i-do {
   background: #ffffff;
+  padding-top: 7rem;
   padding-bottom: 3rem;
 }
 
@@ -627,7 +628,6 @@ p {
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   column-gap: 1.5rem;
-  max-width: 1144px;
   margin: auto;
   position: relative;
   padding-bottom: 4rem;
