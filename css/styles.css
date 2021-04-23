@@ -708,6 +708,7 @@ p {
   line-height: 1.7;
 }
 .work__content .text {
+  max-width: 33rem;
   flex: 1 0 42%;
   display: flex;
   justify-content: center;
@@ -728,11 +729,13 @@ p {
 .work__content .img {
   flex: 2 0 58%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 .work__content .img img {
   width: 100%;
+  max-width: 45rem;
+  margin-left: 4rem;
 }
 @media screen and (max-width: 800px) {
   .work__content {
