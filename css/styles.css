@@ -735,7 +735,6 @@ p {
 .work__content .img img {
   width: 100%;
   max-width: 45rem;
-  margin-left: 4rem;
 }
 @media screen and (max-width: 800px) {
   .work__content {
