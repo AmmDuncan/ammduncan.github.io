@@ -80,21 +80,26 @@ p {
   align-items: center;
   padding: 1.2rem 2rem;
   box-sizing: border-box;
-  box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.15),
+  box-shadow: 0 .25rem .25rem rgba($color-primary-dark, 0.15),
     0 1rem 1rem rgba($color-primary-dark, 0.05);
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 500;
   // font-size: $font-size-body-larger;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 
   img {
     margin-right: 0.75rem;
   }
 
   &:hover {
-    transform: scale(0.985);
-    box-shadow: 0 0.5rem 0.8rem rgba($color-primary-dark, 0.15);
+    transform: scale(1.025) translateY(-.25rem);
+    box-shadow: 0 0.75rem 1.5rem -0.5rem rgba($color-primary-dark, 0.25);
+  }
+
+  &:active {
+    transform: scale(.985) translateY(.05rem);
+    box-shadow: 0 0.75rem 1.5rem -0.5rem rgba($color-primary-dark, 0.25);
   }
 }
 
@@ -434,7 +439,7 @@ p {
 
     .btn {
       &--primary {
-        margin-right: 0.7rem;
+        margin-right: 1rem;
       }
     }
 

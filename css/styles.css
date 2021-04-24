@@ -184,18 +184,22 @@ p {
   align-items: center;
   padding: 1.2rem 2rem;
   box-sizing: border-box;
-  box-shadow: 0 1rem 2rem rgba(52, 4, 178, 0.15), 0 1rem 1rem rgba(52, 4, 178, 0.05);
+  box-shadow: 0 0.25rem 0.25rem rgba(52, 4, 178, 0.15), 0 1rem 1rem rgba(52, 4, 178, 0.05);
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 500;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .btn img {
   margin-right: 0.75rem;
 }
 .btn:hover {
-  transform: scale(0.985);
-  box-shadow: 0 0.5rem 0.8rem rgba(52, 4, 178, 0.15);
+  transform: scale(1.025) translateY(-0.25rem);
+  box-shadow: 0 0.75rem 1.5rem -0.5rem rgba(52, 4, 178, 0.25);
+}
+.btn:active {
+  transform: scale(0.985) translateY(0.05rem);
+  box-shadow: 0 0.75rem 1.5rem -0.5rem rgba(52, 4, 178, 0.25);
 }
 
 .btn--primary {
@@ -480,7 +484,7 @@ p {
   margin-top: 2rem;
 }
 .hero .content .ctas .btn--primary {
-  margin-right: 0.7rem;
+  margin-right: 1rem;
 }
 @media screen and (max-width: 480px) {
   .hero .content .ctas {
