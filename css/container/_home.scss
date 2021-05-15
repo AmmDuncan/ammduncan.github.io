@@ -1,0 +1,733 @@
+/* ======================================================================   
+ * Font Family Setup
+ * ======================================================================*/
+@font-face {
+  font-family: "Poppins";
+  src: url("Poppins-Regular.woff2") format("woff2"),
+    url("Poppins-Regular.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./Poppins-Light.woff2") format("woff2"),
+    url("./Poppins-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./Poppins-Medium.woff2") format("woff2"),
+    url("./Poppins-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./Poppins-SemiBold.woff2") format("woff2"),
+    url("./Poppins-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+}
+
+/* ======================================================================
+ * GENERAL STYLES
+ * ======================================================================*/
+html {
+  font-size: 15px;
+  font-family: poppins, "Segoe Ui", "Gill Sans Mt", sans-serif;
+}
+
+body {
+  color: $color-text;
+}
+
+h2 {
+  font-size: $font-size-h1;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @media (max-width: $mob-md) {
+    font-size: $font-size-h2;
+  }
+}
+
+p {
+  line-height: 1.7;
+  font-size: $font-size-body-larger;
+  //font-weight: 300;
+
+  @media (min-width: $desk-md) {
+    font-size: $font-size-body-larger;
+  }
+
+  @media (max-width: $desk-sm) {
+    font-size: 1.2rem;
+  }
+}
+
+/* Buttons */
+.btn {
+  min-height: 57px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 0.25rem 0.25rem rgba($color-primary-dark, 0.15),
+    0 1rem 1rem rgba($color-primary-dark, 0.05);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  // font-size: $font-size-body-larger;
+  transition: 0.2s ease-in-out;
+
+  img {
+    margin-right: 0.75rem;
+  }
+
+  &:hover {
+    transform: scale(1.025) translateY(-0.25rem);
+    box-shadow: 0 0.75rem 1.5rem -0.5rem rgba($color-primary-dark, 0.25);
+  }
+
+  &:active {
+    transform: scale(0.985) translateY(0.05rem);
+    box-shadow: 0 0.75rem 1.5rem -0.5rem rgba($color-primary-dark, 0.25);
+  }
+}
+
+.btn--primary {
+  background: $color-primary;
+  color: #fff;
+
+  &:hover {
+    img {
+      animation: zoom 0.4s ease-in-out;
+    }
+  }
+}
+
+.btn--secondary {
+  background: #fff;
+  color: $color-primary;
+
+  &:hover {
+    img {
+      animation: shake 0.4s ease-in-out;
+    }
+  }
+}
+
+.seperator {
+  height: 0.5rem;
+}
+
+.underline {
+  position: relative;
+  margin-bottom: 5rem;
+
+  &:after {
+    content: "";
+    width: 5rem;
+    height: 0.25rem;
+    position: absolute;
+    bottom: -2rem;
+    background: $color-secondary;
+  }
+}
+
+/* ======================================================================
+ * NAVIGATION BAR
+ * ======================================================================*/
+.navbar {
+  /* positioning */
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+
+  /* display and box-model */
+  border-bottom: 1px solid rgba($color-white, 0.35);
+  box-shadow: 0 0.8rem 1.5rem rgba($color-primary-dark, 0.1);
+
+  /* other */
+  background: rgba($color-white, 0.85);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  -moz-backdrop-filter: blur(1rem);
+
+  @media (max-width: $tab-md) {
+    height: auto;
+
+    .mycontainer {
+      width: 100%;
+    }
+  }
+}
+
+.navbar .nav {
+  /* positioning */
+  height: 100%;
+  /* display and box-model */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* other */
+  font-weight: 400;
+
+  &__brand__container {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__brand {
+    // margin-left: 2rem;
+    font-size: $font-size-body-larger;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+      color: $color-primary;
+    }
+  }
+
+  &__list {
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+    transition: 0.2s ease-in-out;
+
+    li {
+      height: 100%;
+    }
+  }
+
+  &__link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    color: #303030;
+    font-size: 1.1rem;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+
+  &__opener {
+    height: 2.3rem;
+    display: none;
+    align-self: center;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+    .bar {
+      width: 2.5rem;
+      height: 3px;
+      display: inline-block;
+      border-radius: 8px;
+      background: $color-primary;
+      transition: inherit;
+
+      &:nth-child(2) {
+        width: 1.5rem;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  @media (max-width: $tab-md) {
+  }
+}
+
+/* -------------------------------------
+ * Collapse Navbar on Tablets and below 
+ * -------------------------------------*/
+@media (max-width: $tab-md) {
+  .navbar .nav {
+    flex-flow: column;
+    align-items: stretch;
+    padding-right: 4px;
+
+    .nav__brand__container {
+      flex: 65px;
+      align-items: center;
+      padding-left: 5%;
+
+      .nav__opener {
+        display: flex;
+        box-sizing: content-box;
+      }
+    }
+
+    .nav__list {
+      max-height: 0;
+      width: 99%;
+      flex-flow: column;
+      align-items: stretch;
+      margin-left: 1%;
+      overflow-y: hidden;
+      background: rgba($color-white, 0.45);
+      border-radius: 4px;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid rgba($color-primary, 0.1);
+      }
+    }
+
+    .nav__link {
+      width: 100%;
+      padding: 1.5rem 4%;
+      // font-size: $font-size-body-larger;
+
+      .active {
+        background: $color-primary-dark;
+      }
+    }
+  }
+
+  .navbar.open .nav {
+    &__list {
+      max-height: 300px;
+      margin-bottom: 4px;
+    }
+
+    &__opener {
+      height: 2.5rem;
+      .bar {
+        // margin-right: 0.5rem;
+
+        &:nth-child(1) {
+          transform: rotate(-45deg);
+          transform-origin: top right;
+        }
+
+        &:nth-child(2) {
+          align-self: center;
+          width: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(45deg);
+          transform-origin: bottom right;
+        }
+      }
+    }
+  }
+}
+
+/* ======================================================================
+ * MAIN SECTIONS
+ * ======================================================================*/
+.section {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.mycontainer {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+
+  @media screen and (max-width: $desk-md) {
+    max-width: 1140px;
+  }
+}
+
+/* ======================================================================
+ * HEADER & HERO
+ * ======================================================================*/
+.header {
+  padding-bottom: 25vh;
+  background-image: radial-gradient(
+      circle,
+      rgba($color-primary-light, 0.4) 45%,
+      rgba($color-primary-light, 0.7)
+    ),
+    url("../img/herobg-center.png");
+  background-size: cover;
+  background-position: center center;
+  transition: 0.5s ease-in-out;
+
+  @media (max-width: $tab-sm) {
+    background-position: center top;
+    background-image: radial-gradient(
+        circle,
+        rgba($color-primary-light, 0.4) 45%,
+        rgba($color-primary-light, 0.7)
+      ),
+      url("../img/herobg-center-mob.png");
+  }
+}
+
+.hero .content {
+  max-width: 45rem;
+  padding-top: 20vh;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  h3 {
+    margin: 1rem 0 2rem;
+    font-size: $font-size-h3;
+    // font-size: $font-size-h3;
+    font-weight: 400;
+
+    @media (max-width: $tab-md) {
+      font-size: $font-size-body-larger;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: $font-size-display;
+    font-weight: 600;
+    line-height: 1.1;
+    animation: bounce-in 0.5s ease-out forwards;
+    text-align: center;
+
+    &.go {
+      animation: slide-down-out 0.5s ease-in-out forwards;
+    }
+
+    .highlight {
+      position: relative;
+      display: inline-block;
+      color: $color-primary;
+    }
+
+    @media (max-width: $desk-md) {
+      font-size: $font-size-display-sm;
+    }
+
+    @media (max-width: $tab-md) {
+      font-size: $font-size-h1;
+    }
+  }
+
+  .ctas {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    .btn {
+      &--primary {
+        margin-right: 1rem;
+      }
+    }
+
+    @media screen and (max-width: $mob-md) {
+      width: 100%;
+      flex-flow: column;
+      align-items: stretch;
+
+      .btn--primary {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tab-md) {
+    max-width: 35rem;
+  }
+}
+
+/* ======================================================================
+ * WHAT I DO - SECTION
+ * ======================================================================*/
+.what-i-do {
+  background: #ffffff;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.what-i-do__content {
+  h2 {
+    text-align: center;
+
+    &:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .child {
+    display: flex;
+    margin-bottom: 5rem;
+
+    .text {
+      max-width: 42rem;
+      flex: 1 1 40%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      line-height: 1.6;
+
+      h3 {
+        margin-bottom: 1rem;
+        font-size: $font-size-h2-sm;
+        text-transform: capitalize;
+        line-height: 1.5;
+        font-weight: 500;
+
+        @media (max-width: $mob-lg) {
+          font-size: $font-size-h3;
+        }
+      }
+    }
+
+    .img {
+      flex: 1 1 58%;
+      display: flex;
+      align-items: center;
+
+      img {
+        max-width: 35rem;
+        width: 80%;
+        margin: 0 10%;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      max-width: 480px;
+      flex-flow: column;
+      margin-left: auto;
+      margin-right: auto;
+
+      .img {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .dynamic-sites {
+    .child {
+      display: flex;
+
+      .text {
+        order: 1;
+      }
+      .img {
+        order: -1;
+      }
+
+      @media screen and (max-width: 800px) {
+        .text {
+          order: 1;
+        }
+        .img {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+/* ======================================================================
+ * WHY CHOOSE ME - SECTION
+ * ======================================================================*/
+.choose-me {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: 0rem;
+    left: 0;
+    background: $color-primary-dark;
+    z-index: -1;
+
+    @media (max-width: $desk-sm) {
+      height: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8.5vw;
+    width: 100%;
+    height: 12.5vw;
+    z-index: -1;
+    background-image: url("../img/fluidbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.choose-me__content {
+  h2 {
+    text-align: center;
+    font-family: $font-family-heading;
+
+    @media (max-width: $desk-sm) {
+      color: white;
+    }
+
+    &:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.choose-me__content .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  column-gap: 1.5rem;
+  //max-width: 1140px;
+  margin: auto;
+  position: relative;
+  padding-bottom: 4rem;
+
+  .card {
+    display: grid;
+    grid-template-rows: 7rem minmax(0.8rem, 3.5rem) minmax(3rem, auto);
+    row-gap: 1rem;
+    min-height: 4rem;
+    box-shadow: 0 1.5rem 2.5rem -0.5rem rgba(30, 5, 70, 0.3);
+    padding: 2.25rem 2.25rem 2.5rem;
+    background: $color-primary;
+    border-radius: 4px;
+    color: #fff;
+    transition: ease-out 0.2s;
+
+    .img {
+      display: flex;
+      align-items: flex-end;
+      // margin-bottom: 1rem;
+
+      img {
+        height: 100%;
+      }
+
+      lord-icon {
+        width: 104px;
+        height: 104px;
+        align-self: center;
+        margin-left: -1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    h3 {
+      display: flex;
+      align-items: flex-end;
+      font-size: $font-size-h3;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    p {
+      color: rgba($color-white, 0.6);
+      // font-weight: 300;
+      // font-size: $font-size-body-larger;
+    }
+
+    &:hover {
+      transform: translateY(-0.25rem) scale(1.02);
+    }
+
+    @media (max-width: $desk-sm) {
+      row-gap: 1rem;
+    }
+  }
+
+  @media (max-width: $desk-sm) {
+    max-width: 480px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 1rem;
+  }
+}
+
+/* ======================================================================
+ * MY WORK - SECTION
+ * ======================================================================*/
+.work {
+  margin-top: 6vw;
+
+  &__content {
+    display: flex;
+
+    h2 {
+      &:after {
+        left: 0;
+      }
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    .text {
+      max-width: 33rem;
+      flex: 1 0 42%;
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+
+      p {
+        padding-right: 3rem;
+        // font-size: $font-size-body-larger;
+        line-height: 1.7;
+
+        @media (max-width: $tab-md) {
+          padding-right: 0;
+        }
+      }
+
+      .cta {
+        margin-top: 3rem;
+      }
+    }
+
+    .img {
+      flex: 2 0 58%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        max-width: 45rem;
+        //margin-left: 4rem;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      max-width: 480px;
+      flex-flow: column;
+    }
+  }
+}

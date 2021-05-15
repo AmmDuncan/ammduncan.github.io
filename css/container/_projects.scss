@@ -1,0 +1,92 @@
+.project-body {
+  background: #e1dded;
+}
+
+.projects-header {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: $color-primary-dark;
+  color: $color-white;
+  text-align: center;
+  z-index: -1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -11.5vw;
+    width: 100%;
+    height: 13vw;
+    z-index: -1;
+    background-image: url("../img/fluidbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    margin-bottom: 3.5rem;
+    font-size: $font-size-h1;
+
+    &:after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  p {
+    max-width: 45rem;
+    margin: auto;
+    color: $color-primary-light;
+  }
+}
+
+.project-cards {
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: 767px) {
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.project-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 1.5rem 1.5rem -1rem rgba($color-primary-dark, 0.2);
+  background: $color-white;
+
+  &__image {
+    width: 101%;
+  }
+
+  &__body {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+
+    & > *:first-child {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__tag-list {
+    display: flex;
+  }
+
+  &__tag {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: #ddd2f9;
+    font-size: $font-size-body-smaller;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
