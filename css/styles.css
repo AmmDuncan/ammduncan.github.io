@@ -839,7 +839,7 @@ p {
 }
 .project-card:hover {
   transform: scale(1.025) translateY(-0.25rem);
-  box-shadow: 0 2rem 3.5rem -1rem rgba(52, 4, 178, 0.3);
+  box-shadow: 0 2rem 3.5rem -1rem rgba(52, 4, 178, 0.15);
 }
 
 /*# sourceMappingURL=styles.css.map */
