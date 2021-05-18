@@ -161,7 +161,22 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" defer>
   </script> -->
-  <script src=" ./js/masonry.js" defer> </script>
+  <script src=" ./js/masonry.js" id="toRemove" defer> </script>
+  <script>
+    function load_js() {
+      var body = document.getElementsByTagName('body')[0];
+      var script = document.createElement('script');
+      script.src = './js/masonry.js';
+      body.appendChild(script);
+      console.log("script added")
+    }
+    let curMasonryScript = document.querySelector("#toRemove")
+    setTimeout(() => {
+      curMasonryScript.parentNode.removeChild(curMasonryScript);
+      console.log("script removed")
+      load_js()
+    }, 3000)
+  </script>
 </body>
 
 </html>

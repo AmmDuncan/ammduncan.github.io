@@ -67,6 +67,8 @@
 
   &__image {
     width: 101%;
+    object-fit: cover;
+    object-position: center top;
   }
 
   &__body {
