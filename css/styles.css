@@ -760,7 +760,7 @@ p {
   background-color: #3404b2;
   color: #ffffff;
   text-align: center;
-  z-index: -1;
+  z-index: 1;
 }
 .projects-header:after {
   content: "";
@@ -769,7 +769,7 @@ p {
   bottom: -11.5vw;
   width: 100%;
   height: 13vw;
-  z-index: -1;
+  z-index: 0;
   background-image: url("../img/fluidbg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -777,8 +777,11 @@ p {
 .projects-header h1 {
   margin-bottom: 3.5rem;
   font-size: 3.157rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .projects-header h1:after {
+  bottom: -1rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -789,6 +792,8 @@ p {
 }
 
 .project-cards {
+  position: relative;
+  z-index: 10;
   margin-top: -5rem;
   margin-bottom: 5rem;
 }
@@ -805,6 +810,7 @@ p {
   border-radius: 4px;
   box-shadow: 0 1.5rem 1.5rem -1rem rgba(52, 4, 178, 0.2);
   background: #ffffff;
+  transition: 0.2s ease-out;
 }
 .project-card__image {
   width: 101%;
@@ -830,6 +836,10 @@ p {
 .project-card__title {
   font-size: 18px;
   line-height: 1.2;
+}
+.project-card:hover {
+  transform: scale(1.025) translateY(-0.25rem);
+  box-shadow: 0 2rem 3.5rem -1rem rgba(52, 4, 178, 0.3);
 }
 
 /*# sourceMappingURL=styles.css.map */
