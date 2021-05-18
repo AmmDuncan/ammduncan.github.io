@@ -162,21 +162,8 @@
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" defer>
   </script> -->
   <script src=" ./js/masonry.js" id="toRemove" defer> </script>
-  <script>
-    function load_js() {
-      var body = document.getElementsByTagName('body')[0];
-      var script = document.createElement('script');
-      script.setAttribute("id", "toRemove")
-      script.src = './js/masonry.js';
-      body.append(script);
-      console.log("script added")
-    }
-    let curMasonryScript = document.querySelector("#toRemove")
-    setTimeout(() => {
-      curMasonryScript.parentNode.removeChild(curMasonryScript);
-      console.log("script removed")
-      load_js()
-    }, 1500)
+  <script src="./js/reload_masonry.js" defer>
+
   </script>
 </body>
 
