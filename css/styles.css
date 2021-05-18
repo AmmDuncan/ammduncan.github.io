@@ -794,7 +794,6 @@ p {
 }
 @media screen and (max-width: 767px) {
   .project-cards {
-    max-width: 28rem;
     margin-left: auto;
     margin-right: auto;
   }
