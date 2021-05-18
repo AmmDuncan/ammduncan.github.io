@@ -46,6 +46,10 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
 
+  @media (max-width: $tab-md) {
+    font-size: $font-size-h1-sm;
+  }
+
   @media (max-width: $mob-md) {
     font-size: $font-size-h2;
   }
