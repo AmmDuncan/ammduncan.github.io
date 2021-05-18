@@ -166,8 +166,9 @@
     function load_js() {
       var body = document.getElementsByTagName('body')[0];
       var script = document.createElement('script');
+      script.setAttribute("id", "toRemove")
       script.src = './js/masonry.js';
-      body.appendChild(script);
+      body.append(script);
       console.log("script added")
     }
     let curMasonryScript = document.querySelector("#toRemove")
@@ -175,7 +176,7 @@
       curMasonryScript.parentNode.removeChild(curMasonryScript);
       console.log("script removed")
       load_js()
-    }, 3000)
+    }, 1500)
   </script>
 </body>
 
