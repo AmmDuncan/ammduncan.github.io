@@ -287,10 +287,10 @@ p {
   font-size: 1.333rem;
   font-weight: 500;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
 }
 .navbar .nav__brand a {
+  display: flex;
+  align-items: center;
   color: #5222d0;
 }
 .navbar .nav__list {
