@@ -374,11 +374,10 @@ p {
   .navbar .nav .nav__list li {
     display: flex;
     align-items: center;
-    border-top: 1px solid rgba(82, 34, 208, 0.1);
   }
   .navbar .nav .nav__link {
     width: 100%;
-    padding: 1.5rem 4%;
+    padding: 1.3rem 4%;
   }
   .navbar .nav .nav__link .active {
     background: #3404b2;
@@ -386,7 +385,7 @@ p {
 
   .navbar.open .nav__list {
     max-height: 300px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
   .navbar.open .nav__opener {
     height: 2.5rem;

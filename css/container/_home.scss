@@ -295,13 +295,13 @@ p {
       li {
         display: flex;
         align-items: center;
-        border-top: 1px solid rgba($color-primary, 0.1);
+        // border-top: 1px solid rgba($color-primary, 0.1);
       }
     }
 
     .nav__link {
       width: 100%;
-      padding: 1.5rem 4%;
+      padding: 1.3rem 4%;
       // font-size: $font-size-body-larger;
 
       .active {
@@ -313,7 +313,7 @@ p {
   .navbar.open .nav {
     &__list {
       max-height: 300px;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
     }
 
     &__opener {
