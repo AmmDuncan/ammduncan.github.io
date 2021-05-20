@@ -190,8 +190,10 @@ p {
   &__brand {
     // margin-left: 2rem;
     font-size: $font-size-body-larger;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
 
     a {
       color: $color-primary;

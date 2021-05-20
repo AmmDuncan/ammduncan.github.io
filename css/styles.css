@@ -285,8 +285,10 @@ p {
 }
 .navbar .nav__brand {
   font-size: 1.333rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 .navbar .nav__brand a {
   color: #5222d0;
