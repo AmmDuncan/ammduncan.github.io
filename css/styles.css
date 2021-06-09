@@ -1,9 +1,9 @@
 /* imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Sora:wght@300;400;500;600&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Sora:wght@300;400;500;600&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -851,16 +851,18 @@ p {
 .project-card__body {
   display: flex;
   flex-flow: column;
-  padding: 1rem;
+  padding: 0.5rem 1rem 1rem;
 }
 .project-card__body > *:first-child {
   margin-bottom: 0.75rem;
 }
 .project-card__tag-list {
   display: flex;
+  flex-flow: row wrap;
 }
 .project-card__tag {
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
   background: #efefef;

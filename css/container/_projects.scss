@@ -109,19 +109,21 @@
   &__body {
     display: flex;
     flex-flow: column;
-    padding: 1rem;
+    padding: .5rem 1rem 1rem;
 
-    & > *:first-child {
+    &>*:first-child {
       margin-bottom: 0.75rem;
     }
   }
 
   &__tag-list {
     display: flex;
+    flex-flow: row wrap;
   }
 
   &__tag {
     margin-right: 0.5rem;
+    margin-top: 0.5rem;
     padding: 0.5rem;
     border-radius: 4px;
     // color: #fff;
