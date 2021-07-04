@@ -17,6 +17,13 @@
 
 @font-face {
   font-family: "Poppins";
+  src: url("./Poppins-Thin.woff2") format("woff2"),
+    url("./Poppins-Thin.ttf") format("ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Poppins";
   src: url("./Poppins-Medium.woff2") format("woff2"),
     url("./Poppins-Medium.ttf") format("ttf");
   font-weight: 500;
@@ -38,7 +45,7 @@ html {
 }
 
 body {
-  color: $color-text;
+  color: $color-text-lighter;
   font-family: sora, sans-serif;
 }
 
@@ -50,9 +57,15 @@ h5 {
   font-family: "poppins", sans-serif;
 }
 
+h1,
+h2 {
+  color: $color-text;
+}
+
 h2 {
   font-size: $font-size-h1;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.125rem;
   text-transform: uppercase;
 
   @media (max-width: $tab-md) {
@@ -228,13 +241,14 @@ p {
     padding-right: 1.25rem;
     color: #303030;
     font-size: 1.1rem;
+    text-transform: uppercase;
 
     &:hover {
       color: $color-primary;
     }
 
     &.active {
-      font-weight: 600;
+      font-weight: 700;
     }
   }
 
@@ -419,7 +433,8 @@ p {
     margin-bottom: 1rem;
     font-size: $font-size-display;
     font-weight: 600;
-    line-height: 1.1;
+    letter-spacing: -0.1rem;
+    line-height: 1.05;
     animation: bounce-in 0.5s ease-out forwards;
     text-align: center;
 
@@ -482,6 +497,7 @@ p {
 .what-i-do__content {
   h2 {
     text-align: center;
+    margin-bottom: 6rem;
 
     &:after {
       left: 50%;
@@ -505,8 +521,9 @@ p {
         margin-bottom: 1rem;
         font-size: $font-size-h2-sm;
         text-transform: capitalize;
-        line-height: 1.5;
-        font-weight: 500;
+        line-height: 1.25;
+        font-weight: 700;
+        letter-spacing: -0.05rem;
 
         @media (max-width: $mob-lg) {
           font-size: $font-size-h3;
@@ -602,6 +619,7 @@ p {
   h2 {
     text-align: center;
     font-family: $font-family-heading;
+    margin-bottom: 8rem;
 
     @media (max-width: $desk-sm) {
       color: white;
@@ -617,7 +635,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  column-gap: 1.5rem;
+  column-gap: 2rem;
   //max-width: 1140px;
   margin: auto;
   position: relative;
@@ -657,8 +675,9 @@ p {
       display: flex;
       align-items: flex-end;
       font-size: $font-size-h3;
-      font-weight: 500;
-      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: -0.065rem;
+      line-height: 1.1;
     }
 
     p {

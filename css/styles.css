@@ -130,6 +130,11 @@ a {
 }
 @font-face {
   font-family: "Poppins";
+  src: url("./Poppins-Thin.woff2") format("woff2"), url("./Poppins-Thin.ttf") format("ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Poppins";
   src: url("./Poppins-Medium.woff2") format("woff2"), url("./Poppins-Medium.ttf") format("ttf");
   font-weight: 500;
 }
@@ -147,7 +152,7 @@ html {
 }
 
 body {
-  color: #2a283a;
+  color: #524f69;
   font-family: sora, sans-serif;
 }
 
@@ -159,9 +164,15 @@ h5 {
   font-family: "poppins", sans-serif;
 }
 
+h1,
+h2 {
+  color: #484461;
+}
+
 h2 {
   font-size: 3.157rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.125rem;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -320,12 +331,13 @@ p {
   padding-right: 1.25rem;
   color: #303030;
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 .navbar .nav__link:hover {
   color: #5222d0;
 }
 .navbar .nav__link.active {
-  font-weight: 600;
+  font-weight: 700;
 }
 .navbar .nav__opener {
   height: 2.3rem;
@@ -474,7 +486,8 @@ p {
   margin-bottom: 1rem;
   font-size: 4.81rem;
   font-weight: 600;
-  line-height: 1.1;
+  letter-spacing: -0.1rem;
+  line-height: 1.05;
   animation: bounce-in 0.5s ease-out forwards;
   text-align: center;
 }
@@ -532,6 +545,7 @@ p {
 
 .what-i-do__content h2 {
   text-align: center;
+  margin-bottom: 6rem;
 }
 .what-i-do__content h2:after {
   left: 50%;
@@ -553,8 +567,9 @@ p {
   margin-bottom: 1rem;
   font-size: 1.953rem;
   text-transform: capitalize;
-  line-height: 1.5;
-  font-weight: 500;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
 }
 @media (max-width: 575px) {
   .what-i-do__content .child .text h3 {
@@ -639,6 +654,7 @@ p {
 .choose-me__content h2 {
   text-align: center;
   font-family: "poppins", "segoe ui", "gill  sans mt", sans-serif;
+  margin-bottom: 8rem;
 }
 @media (max-width: 992px) {
   .choose-me__content h2 {
@@ -654,7 +670,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  column-gap: 1.5rem;
+  column-gap: 2rem;
   margin: auto;
   position: relative;
   padding-bottom: 4rem;
@@ -689,8 +705,9 @@ p {
   display: flex;
   align-items: flex-end;
   font-size: 1.777rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.065rem;
+  line-height: 1.1;
 }
 .choose-me__content .cards .card p {
   color: rgba(255, 255, 255, 0.6);
@@ -791,7 +808,7 @@ p {
 .projects-header p {
   max-width: 45rem;
   margin: auto;
-  color: #2a283a;
+  color: #484461;
 }
 
 .project-cards {
@@ -875,7 +892,7 @@ p {
 }
 .project-card a {
   text-decoration: none;
-  color: #2a283a;
+  color: #484461;
 }
 .project-card:hover {
   transform: scale(1.0125) translateY(-0.25rem);

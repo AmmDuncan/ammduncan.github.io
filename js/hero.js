@@ -17,7 +17,7 @@ function insertNew(content) {
 }
 
 const headings = [
-  'I help you display your <span class="highlight">products</span>',
+  'I help you showcase your <span class="highlight">products</span>',
   'I help you manage your <span class="highlight">data</span>',
 ];
 
