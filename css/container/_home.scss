@@ -409,8 +409,8 @@ p {
  * ======================================================================*/
 .header {
   padding-bottom: 25vh;
-  min-height: 80vh;
-  max-height: 720px;
+  min-height: 90vh;
+  max-height: 800px;
   box-sizing: border-box;
   background-image: radial-gradient(
       circle,
@@ -437,7 +437,7 @@ p {
 .hero .content {
   max-width: 45rem;
   box-sizing: border-box;
-  padding-top: 20vh;
+  padding-top: 22.5vh;
   margin: auto;
   display: flex;
   flex-flow: column;

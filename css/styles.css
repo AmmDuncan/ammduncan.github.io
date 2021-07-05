@@ -473,8 +473,8 @@ p {
  * ======================================================================*/
 .header {
   padding-bottom: 25vh;
-  min-height: 80vh;
-  max-height: 720px;
+  min-height: 90vh;
+  max-height: 800px;
   box-sizing: border-box;
   background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center.png");
   background-size: cover;
@@ -492,7 +492,7 @@ p {
 .hero .content {
   max-width: 45rem;
   box-sizing: border-box;
-  padding-top: 20vh;
+  padding-top: 22.5vh;
   margin: auto;
   display: flex;
   flex-flow: column;
