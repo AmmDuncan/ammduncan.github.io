@@ -152,7 +152,7 @@ html {
 }
 
 body {
-  color: #524e72;
+  color: #524f69;
   font-family: sora, sans-serif;
 }
 
@@ -172,7 +172,7 @@ h2 {
 h2 {
   font-size: 3.157rem;
   font-weight: 700;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.05rem;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -188,7 +188,7 @@ h2 {
 
 p {
   line-height: 1.7;
-  font-size: 1.333rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 @media (min-width: 1400px) {
@@ -213,7 +213,7 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem 3rem;
+  padding: 1.1rem 2.9rem;
   box-sizing: border-box;
   box-shadow: 0 0.5rem 1.25rem rgba(52, 4, 178, 0.175), 0 0.75rem 1.25rem rgba(52, 4, 178, 0.05);
   border-bottom: 4px solid rgba(52, 4, 178, 0.1);
@@ -221,6 +221,7 @@ p {
   text-transform: uppercase;
   font-weight: 500;
   transition: 0.15s ease-in-out;
+  font-size: 1rem;
 }
 .btn img {
   margin-right: 0.75rem;
@@ -238,7 +239,7 @@ p {
   background: #602fdf;
   color: #fff;
   border-bottom: 4px solid rgba(52, 4, 178, 0.7);
-  padding: 1.275rem 3.075rem;
+  padding: 1.2rem 3rem;
 }
 .btn--primary:hover img {
   animation: zoom 0.4s ease-in-out;
@@ -499,7 +500,7 @@ p {
 }
 .hero .content h3 {
   margin: 1rem 0 2.25rem;
-  font-size: 1.777rem;
+  font-size: 1.577rem;
   font-family: "sora", sans-serif;
   font-weight: 300;
   letter-spacing: 0.15rem;
