@@ -89,6 +89,9 @@ p {
   @media (max-width: $desk-sm) {
     font-size: 1.2rem;
   }
+  @media (max-width: $mob-md) {
+    font-size: 1.125rem;
+  }
 }
 
 /* Buttons */
@@ -173,14 +176,28 @@ p {
   z-index: 1000;
 
   /* display and box-model */
-  border-bottom: 1px solid rgba($color-white, 0.35);
+  border-bottom: 1px solid rgba($color-white, 0.65);
   box-shadow: 0 0.8rem 1.5rem rgba($color-primary-dark, 0.1);
 
   /* other */
-  background: rgba($color-white, 0.85);
+  background: rgba($color-white, 0.7);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   -moz-backdrop-filter: blur(1rem);
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    filter: blur(1.5rem);
+    opacity: 0.45;
+    overflow: hidden;
+  }
 
   @media (max-width: $tab-md) {
     height: auto;
@@ -387,6 +404,9 @@ p {
  * ======================================================================*/
 .header {
   padding-bottom: 25vh;
+  min-height: 80vh;
+  max-height: 720px;
+  box-sizing: border-box;
   background-image: radial-gradient(
       circle,
       rgba($color-primary-light, 0.4) 45%,
@@ -398,6 +418,7 @@ p {
   transition: 0.5s ease-in-out;
 
   @media (max-width: $tab-sm) {
+    padding-bottom: 20vh;
     background-position: center top;
     background-image: radial-gradient(
         circle,
@@ -410,22 +431,29 @@ p {
 
 .hero .content {
   max-width: 45rem;
-  padding-top: 20vh;
+  box-sizing: border-box;
+  padding-top: 22.5vh;
   margin: auto;
   display: flex;
   flex-flow: column;
   align-items: center;
 
   h3 {
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 2.25rem;
     font-size: $font-size-h3;
     font-family: "sora", sans-serif;
     font-weight: 300;
     letter-spacing: 0.15rem;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 1.4;
 
     @media (max-width: $tab-md) {
       font-size: $font-size-body-larger;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: $mob-md) {
+      font-size: 1.25rem;
       margin-bottom: 2rem;
     }
   }
@@ -457,6 +485,11 @@ p {
       font-size: $font-size-h1;
       max-width: 32rem;
     }
+
+    @media (max-width: $mob-md) {
+      font-size: $font-size-h1-sm;
+      max-width: 32rem;
+    }
   }
 
   .ctas {
@@ -484,6 +517,7 @@ p {
 
   @media screen and (max-width: $tab-md) {
     max-width: 35rem;
+    padding-top: 17.5vh;
   }
 }
 
@@ -492,14 +526,14 @@ p {
  * ======================================================================*/
 .what-i-do {
   background: #ffffff;
-  padding-top: 7rem;
+  padding-top: 8rem;
   padding-bottom: 3rem;
 }
 
 .what-i-do__content {
   h2 {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
 
     &:after {
       left: 50%;
@@ -526,9 +560,13 @@ p {
         line-height: 1.15;
         font-weight: 600;
         letter-spacing: -0.075rem;
+        max-width: 340px;
 
         @media (max-width: $mob-lg) {
-          font-size: $font-size-h3;
+          font-size: $font-size-h3-sm;
+          line-height: 1.4;
+          letter-spacing: -0.075rem;
+          max-width: 275px;
         }
       }
     }
@@ -546,11 +584,17 @@ p {
     }
 
     @media screen and (max-width: 800px) {
-      width: 100%;
+      width: 85%;
       max-width: 480px;
       flex-flow: column;
       margin-left: auto;
       margin-right: auto;
+
+      .text {
+        h3 {
+          max-width: 340px;
+        }
+      }
 
       .img {
         margin-top: 2.75rem;
@@ -565,6 +609,10 @@ p {
 
       .text {
         order: 1;
+
+        h3 {
+          max-width: 360px;
+        }
       }
       .img {
         order: -1;
@@ -573,23 +621,36 @@ p {
       @media screen and (max-width: 800px) {
         .text {
           order: 1;
+
+          h3 {
+            max-width: 360px;
+          }
         }
         .img {
           order: 2;
+        }
+      }
+      @media screen and (max-width: $mob-lg) {
+        .text {
+          h3 {
+            width: 100%;
+            max-width: 285px;
+          }
         }
       }
     }
   }
 
   @media screen and (max-width: 800px) {
-    padding: 8rem 0 6rem;
+    padding: 6rem 0 6rem;
 
     h2 {
       max-width: 480px;
+      width: 85%;
       margin-left: auto;
       margin-right: auto;
       text-align: left;
-      margin-bottom: 6rem;
+      margin-bottom: 5rem;
 
       &:after {
         left: 0.25rem;
@@ -790,7 +851,8 @@ p {
       width: 90%;
       max-width: 480px;
       flex-flow: column;
-      margin-top: 6rem;
+      margin-top: 0;
+      margin: auto;
 
       .img {
         margin-top: 2rem;

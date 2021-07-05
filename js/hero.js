@@ -18,7 +18,8 @@ function insertNew(content) {
 
 const headings = [
   'I help you showcase your <span class="highlight">products</span>',
-  'I help you manage your <span class="highlight">data</span>',
+  'I help you manage your <span class="highlight">business data</span>',
+  'I help you achieve your <span class="highlight">online goals</span>',
 ];
 
 let current = 0;
