@@ -1,5 +1,5 @@
 .project-body {
-  background: #ebeaf1;
+  background: #e7e5f0;
 }
 
 .projects-header {
@@ -46,7 +46,7 @@
 
 .project-cards {
   position: relative;
-  padding-top: 5rem;
+  padding-top: 8rem;
   padding-bottom: 5rem;
   // z-index: 10;
   // margin-top: -5rem;
@@ -92,16 +92,18 @@
   width: 100%;
   overflow: hidden;
   padding: 0.25rem;
-  border: 1px solid rgba($color-primary, 0.3);
-  border-radius: 4px;
-  box-shadow: 0 1.25rem 1.5rem -1rem rgba($color-primary-dark, 0.25);
-  // background: $color-primary;
+  // border: 1px solid rgba($color-primary, 0.05);
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2.5rem -0.05rem rgba($color-primary-darkest, 0.2),
+    0 0.15rem 1.5rem rgba($color-primary-darkest, 0.05);
   background: $color-white;
-  transition: 0.2s ease-out;
+  transition: 0.15s ease-out;
+  cursor: pointer;
   z-index: 1;
 
   &__image {
     width: 100%;
+    border-radius: 0.55rem;
     object-fit: cover;
     object-position: center top;
   }
@@ -109,9 +111,9 @@
   &__body {
     display: flex;
     flex-flow: column;
-    padding: .5rem 1rem 1rem;
+    padding: 0.5rem 1rem 1rem;
 
-    &>*:first-child {
+    & > *:first-child {
       margin-bottom: 0.75rem;
     }
   }
@@ -143,8 +145,9 @@
   }
 
   &:hover {
-    transform: scale(1.0125) translateY(-0.25rem);
-    box-shadow: 0 1.75rem 3rem -1rem rgba($color-primary-dark, 0.15);
+    transform: scale(1.012) translateY(-0.2rem);
+    box-shadow: 0 1.75rem 2.5rem -0.75rem rgba($color-primary-dark, 0.2),
+      0 0.5rem 1.5rem rgba($color-primary-darkest, 0.05);
 
     a {
       text-decoration: underline;
