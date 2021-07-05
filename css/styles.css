@@ -166,7 +166,7 @@ h5 {
 
 h1,
 h2 {
-  color: #484461;
+  color: #201b3a;
 }
 
 h2 {
@@ -900,7 +900,7 @@ p {
 .projects-header p {
   max-width: 45rem;
   margin: auto;
-  color: #484461;
+  color: #201b3a;
 }
 
 .project-cards {
@@ -985,7 +985,7 @@ p {
 }
 .project-card a {
   text-decoration: none;
-  color: #484461;
+  color: #201b3a;
 }
 .project-card:hover {
   transform: scale(1.012) translateY(-0.2rem);
