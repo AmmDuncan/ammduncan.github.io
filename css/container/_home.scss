@@ -86,7 +86,7 @@ p {
     font-size: $font-size-body-larger;
   }
 
-  @media (max-width: $desk-sm) {
+  @media (max-width: $tab-lg) {
     font-size: 1.2rem;
   }
   @media (max-width: $mob-md) {
@@ -102,12 +102,13 @@ p {
   align-items: center;
   padding: 1.2rem 3rem;
   box-sizing: border-box;
-  box-shadow: 0 0.5rem 1.5rem rgba($color-primary-dark, 0.15),
-    0 1rem 1rem rgba($color-primary-dark, 0.05);
+  box-shadow: 0 0.5rem 1.25rem rgba($color-primary-dark, 0.175),
+    0 0.75rem 1.25rem rgba($color-primary-dark, 0.05);
+  border-bottom: 4px solid rgba($color-primary-dark, 0.1);
   border-radius: 2rem;
   text-transform: uppercase;
   font-weight: 500;
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
   // font-family: "Poppins";
 
   img {
@@ -116,18 +117,20 @@ p {
 
   &:hover {
     transform: scale(1.025) translateY(-0.25rem);
-    box-shadow: 0 0.75rem 1.75rem -0.25rem rgba($color-primary-dark, 0.25);
+    box-shadow: 0 0.75rem 2rem -0.25rem rgba($color-primary-dark, 0.3);
   }
 
   &:active {
-    transform: scale(0.985) translateY(0.05rem);
-    box-shadow: 0 0.75rem 1.75rem -0.25rem rgba($color-primary-dark, 0.25);
+    transform: scale(0.99) translateY(0.035rem);
+    box-shadow: 0 0.75rem 1.75rem -0.25rem rgba($color-primary-dark, 0.3);
   }
 }
 
 .btn--primary {
-  background: $color-primary;
+  background: $color-primary-lighter;
   color: #fff;
+  border-bottom: 4px solid rgba($color-primary-dark, 0.7);
+  padding: 1.275rem 3.075rem;
 
   &:hover {
     img {
