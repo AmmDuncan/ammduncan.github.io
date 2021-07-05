@@ -566,7 +566,6 @@ p {
           font-size: $font-size-h3-sm;
           line-height: 1.4;
           letter-spacing: -0.075rem;
-          max-width: 275px;
         }
       }
     }
@@ -599,6 +598,12 @@ p {
       .img {
         margin-top: 2.75rem;
         margin-bottom: 3rem;
+      }
+    }
+
+    @media screen and (max-width: $mob-lg) {
+      .text h3 {
+        max-width: 275px;
       }
     }
   }

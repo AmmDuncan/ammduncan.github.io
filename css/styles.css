@@ -618,7 +618,6 @@ p {
     font-size: 1.577rem;
     line-height: 1.4;
     letter-spacing: -0.075rem;
-    max-width: 275px;
   }
 }
 .what-i-do__content .child .img {
@@ -645,6 +644,11 @@ p {
   .what-i-do__content .child .img {
     margin-top: 2.75rem;
     margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .what-i-do__content .child .text h3 {
+    max-width: 275px;
   }
 }
 .what-i-do__content .dynamic-sites .child {
