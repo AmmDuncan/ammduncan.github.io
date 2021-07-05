@@ -157,7 +157,7 @@ p {
     width: 5rem;
     height: 0.25rem;
     position: absolute;
-    bottom: -2rem;
+    bottom: -1.25rem;
     background: $color-secondary;
   }
 }
@@ -409,7 +409,7 @@ p {
 }
 
 .hero .content {
-  max-width: 47rem;
+  max-width: 44rem;
   padding-top: 20vh;
   margin: auto;
   display: flex;
@@ -419,21 +419,22 @@ p {
   h3 {
     margin: 1rem 0 2rem;
     font-size: $font-size-h3;
-    // font-size: $font-size-h3;
     font-family: "sora", sans-serif;
     font-weight: 300;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
 
     @media (max-width: $tab-md) {
       font-size: $font-size-body-larger;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
   }
 
   h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: $font-size-display;
     font-weight: 600;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.175rem;
     line-height: 1.05;
     animation: bounce-in 0.5s ease-out forwards;
     text-align: center;
@@ -454,6 +455,7 @@ p {
 
     @media (max-width: $tab-md) {
       font-size: $font-size-h1;
+      max-width: 32rem;
     }
   }
 
@@ -518,12 +520,12 @@ p {
       line-height: 1.6;
 
       h3 {
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
         font-size: $font-size-h2-sm;
         text-transform: capitalize;
-        line-height: 1.25;
-        font-weight: 700;
-        letter-spacing: -0.05rem;
+        line-height: 1.15;
+        font-weight: 600;
+        letter-spacing: -0.075rem;
 
         @media (max-width: $mob-lg) {
           font-size: $font-size-h3;
@@ -551,7 +553,7 @@ p {
       margin-right: auto;
 
       .img {
-        margin-top: 2rem;
+        margin-top: 2.75rem;
         margin-bottom: 3rem;
       }
     }
@@ -575,6 +577,23 @@ p {
         .img {
           order: 2;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 8rem 0 6rem;
+
+    h2 {
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      margin-bottom: 6rem;
+
+      &:after {
+        left: 0.25rem;
+        transform: translateX(0);
       }
     }
   }
@@ -619,15 +638,19 @@ p {
   h2 {
     text-align: center;
     font-family: $font-family-heading;
-    margin-bottom: 8rem;
-
-    @media (max-width: $desk-sm) {
-      color: white;
-    }
+    margin-bottom: 6rem;
 
     &:after {
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: $desk-sm) {
+    padding: 8rem 0 6rem;
+
+    h2 {
+      color: white;
     }
   }
 }
@@ -701,7 +724,11 @@ p {
     grid-template-rows: repeat(3, 1fr);
     margin-left: auto;
     margin-right: auto;
-    row-gap: 1rem;
+    row-gap: 2rem;
+
+    h2 {
+      margin-bottom: 4rem;
+    }
   }
 }
 
@@ -709,7 +736,7 @@ p {
  * MY WORK - SECTION
  * ======================================================================*/
 .work {
-  margin-top: 6vw;
+  margin-top: 8rem;
 
   &__content {
     display: flex;
@@ -763,6 +790,11 @@ p {
       width: 90%;
       max-width: 480px;
       flex-flow: column;
+      margin-top: 6rem;
+
+      .img {
+        margin-top: 2rem;
+      }
     }
   }
 }
