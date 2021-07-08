@@ -120,28 +120,53 @@ a {
  * ======================================================================*/
 @font-face {
   font-family: "Poppins";
-  src: url("Poppins-Regular.woff2") format("woff2"), url("Poppins-Regular.ttf") format("ttf");
+  src: url("./fonts/Poppins-Regular.woff2") format("woff2"), url("./fonts/Poppins-Regular.ttf") format("ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./Poppins-Light.woff2") format("woff2"), url("./Poppins-Light.ttf") format("ttf");
+  src: url("./fonts/Poppins-Light.woff2") format("woff2"), url("./fonts/Poppins-Light.ttf") format("ttf");
   font-weight: 300;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./Poppins-Thin.woff2") format("woff2"), url("./Poppins-Thin.ttf") format("ttf");
+  src: url("./fonts/Poppins-Thin.woff2") format("woff2"), url("./fonts/Poppins-Thin.ttf") format("ttf");
   font-weight: 200;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./Poppins-Medium.woff2") format("woff2"), url("./Poppins-Medium.ttf") format("ttf");
+  src: url("./fonts/Poppins-Medium.woff2") format("woff2"), url("./fonts/Poppins-Medium.ttf") format("ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("./Poppins-SemiBold.woff2") format("woff2"), url("./Poppins-SemiBold.ttf") format("ttf");
+  src: url("./fonts/Poppins-SemiBold.woff2") format("woff2"), url("./fonts/Poppins-SemiBold.ttf") format("ttf");
   font-weight: 600;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-Regular.woff2") format("woff2"), url("./fonts/PlusJakartaSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-Light.woff2") format("woff2"), url("./fonts/PlusJakartaSans-Light.woff") format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-Medium.woff2") format("woff2"), url("./fonts/PlusJakartaSans-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-Bold.woff2") format("woff2"), url("./fonts/PlusJakartaSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"), url("./fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
+  font-weight: 900;
 }
 /* ======================================================================
  * GENERAL STYLES
@@ -149,6 +174,7 @@ a {
 html {
   font-size: 15px;
   font-family: "Poppins", "Segoe Ui", "Gill Sans Mt", sans-serif;
+  font-family: "Plus Jakarta Sans", "Segoe Ui", "Gill Sans Mt", sans-serif;
 }
 
 body {
@@ -162,6 +188,7 @@ h3,
 h4,
 h5 {
   font-family: "Poppins", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 h1,
@@ -172,7 +199,7 @@ h2 {
 h2 {
   font-size: 3.157rem;
   font-weight: 700;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.025rem;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -288,6 +315,7 @@ p {
   -webkit-backdrop-filter: blur(1rem);
   -moz-backdrop-filter: blur(1rem);
   font-family: "poppins", "segoe ui", sans-serif;
+  font-family: "Plus Jakarta Sans", "segoe ui", sans-serif;
 }
 .navbar:before {
   content: "";
@@ -490,7 +518,7 @@ p {
 }
 
 .hero .content {
-  max-width: 45rem;
+  max-width: 42rem;
   box-sizing: border-box;
   padding-top: 22.5vh;
   margin: auto;
@@ -524,7 +552,7 @@ p {
   margin-bottom: 1.75rem;
   font-size: 4.7rem;
   font-weight: 700;
-  letter-spacing: -0.16rem;
+  letter-spacing: -0.17rem;
   line-height: 1.05;
   animation: bounce-in 0.5s ease-out forwards;
   text-align: center;
@@ -575,7 +603,7 @@ p {
 }
 @media (min-width: 1400px) {
   .hero .content {
-    max-width: 48rem;
+    max-width: 45rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -620,7 +648,7 @@ p {
   text-transform: capitalize;
   line-height: 1.25;
   font-weight: 500;
-  letter-spacing: -0.075rem;
+  letter-spacing: -0.025rem;
   max-width: 300px;
 }
 @media (max-width: 575px) {
@@ -744,7 +772,7 @@ p {
 
 .choose-me__content h2 {
   text-align: center;
-  font-family: "poppins", "segoe ui", "gill  sans mt", sans-serif;
+  font-family: "Plus Jakarta Sans", "segoe ui", "gill  sans mt", sans-serif;
   margin-bottom: 6rem;
 }
 .choose-me__content h2:after {
@@ -800,7 +828,7 @@ p {
   align-items: flex-end;
   font-size: 1.777rem;
   font-weight: 600;
-  letter-spacing: -0.065rem;
+  letter-spacing: -0.035rem;
   line-height: 1.1;
 }
 .choose-me__content .cards .card p {
