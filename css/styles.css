@@ -361,7 +361,7 @@ p {
   color: #5222d0;
 }
 .navbar .nav__link.active {
-  font-weight: 700;
+  font-weight: 600;
 }
 .navbar .nav__opener {
   height: 2.3rem;
