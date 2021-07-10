@@ -2,14 +2,15 @@
 
 const headerContent = document.querySelector(".header .hero .content");
 const headerP = document.querySelector(".header .hero .content .ctas");
-let headerMain = document.querySelector(".header .hero .content h1");
+let headerMain = document.querySelectorAll(".header .hero .content h1");
 
 function setHeaderMain() {
   headerMain = document.querySelector(".header .hero .content h1");
 }
 
 function removeH1() {
-  headerMain.remove();
+  headerMain = document.querySelectorAll(".header .hero .content h1");
+  headerMain.forEach((header) => headerContent.removeChild(header));
 }
 
 function insertNew(content) {
