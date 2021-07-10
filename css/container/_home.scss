@@ -103,12 +103,10 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1.1rem 2.9rem;
+  padding: 1rem 2.5rem;
   box-sizing: border-box;
-  box-shadow: 0 0.5rem 1.25rem rgba($color-primary-dark, 0.175),
-    0 0.75rem 1.25rem rgba($color-primary-dark, 0.05);
-  border-bottom: 4px solid rgba($color-primary-dark, 0.1);
   border-radius: 2rem;
+  // border-radius: 0.5rem;
   text-transform: uppercase;
   font-weight: 500;
   transition: 0.15s ease-in-out;
@@ -120,7 +118,7 @@ p {
   }
 
   &:hover {
-    transform: scale(1.025) translateY(-0.25rem);
+    transform: scale(1.02) translateY(-0.15rem);
     box-shadow: 0 0.75rem 2rem -0.25rem rgba($color-primary-dark, 0.3);
   }
 
@@ -128,13 +126,20 @@ p {
     transform: scale(0.99) translateY(0.035rem);
     box-shadow: 0 0.75rem 1.75rem -0.25rem rgba($color-primary-dark, 0.3);
   }
+
+  &.elevated {
+    box-shadow: 0 0.5rem 1.25rem rgba($color-primary-dark, 0.175),
+      0 0.75rem 1.25rem rgba($color-primary-dark, 0.05);
+    border-bottom: 4px solid rgba($color-primary-dark, 0.1);
+  }
 }
 
 .btn--primary {
   background: $color-primary-lighter;
   color: #fff;
   border-bottom: 4px solid rgba($color-primary-dark, 0.7);
-  padding: 1.2rem 3rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 
   &:hover {
     img {
@@ -256,6 +261,15 @@ p {
 
     li {
       height: 100%;
+
+      &.cta {
+        margin-top: 8px;
+
+        .btn {
+          border-bottom: 4px solid rgba($color-primary-dark, 0.05);
+          box-shadow: 0 0.15rem 0.5rem rgba($color-primary-dark, 0.15);
+        }
+      }
     }
   }
 
@@ -263,10 +277,10 @@ p {
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
     color: #303030;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
 
     &:hover {
@@ -351,6 +365,7 @@ p {
     .nav__link {
       width: 100%;
       padding: 1.3rem 4%;
+      justify-content: center;
       // font-size: $font-size-body-larger;
 
       .active {
