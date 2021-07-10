@@ -10,7 +10,8 @@ function setHeaderMain() {
 
 function removeH1() {
   headerMain = document.querySelectorAll(".header .hero .content h1");
-  headerMain.forEach((header) => headerContent.removeChild(header));
+  // headerMain.forEach((header) => headerContent.removeChild(header));
+  headerMain.forEach((header) => header.remove());
 }
 
 function insertNew(content) {
