@@ -132,6 +132,10 @@ p {
       0 0.75rem 1.25rem rgba($color-primary-dark, 0.05);
     border-bottom: 4px solid rgba($color-primary-dark, 0.1);
   }
+
+  @media (max-width: $tab-sm) {
+    padding: 1.15rem 2.15rem;
+  }
 }
 
 .btn--primary {
@@ -234,7 +238,7 @@ p {
   font-weight: 400;
 
   &__brand__container {
-    height: 5rem;
+    height: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -245,11 +249,16 @@ p {
     font-size: 1.125rem;
     font-weight: 500;
     text-transform: uppercase;
+    white-space: nowrap;
+
+    img {
+      height: 20px;
+    }
 
     a {
       display: flex;
       align-items: center;
-      color: $color-primary;
+      color: $color-text;
     }
   }
 
@@ -610,7 +619,7 @@ p {
     }
 
     @media screen and (max-width: 800px) {
-      width: 85%;
+      width: 95%;
       max-width: 480px;
       flex-flow: column;
       margin-left: auto;
