@@ -76,7 +76,7 @@ h2 {
   }
 
   @media (max-width: $mob-md) {
-    font-size: $font-size-h2;
+    font-size: $font-size-h2-sm;
   }
 }
 
@@ -93,7 +93,7 @@ p {
     font-size: 1.2rem;
   }
   @media (max-width: $mob-md) {
-    font-size: 1.125rem;
+    font-size: 18px;
   }
 }
 
@@ -639,7 +639,10 @@ p {
 
     @media screen and (max-width: $mob-lg) {
       .text h3 {
-        max-width: 275px;
+        max-width: 280px;
+        margin-bottom: 0.75rem;
+        font-size: $font-size-h3-sm;
+        letter-spacing: -0.025rem;
       }
     }
   }
@@ -675,7 +678,7 @@ p {
         .text {
           h3 {
             width: 100%;
-            max-width: 285px;
+            max-width: 295px;
           }
         }
       }
@@ -699,11 +702,16 @@ p {
       }
     }
   }
+  @media screen and (max-width: $mob-lg) {
+    h2 {
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 /* ======================================================================
- * WHY CHOOSE ME - SECTION
- * ======================================================================*/
+* WHY CHOOSE ME - SECTION
+* ======================================================================*/
 .choose-me {
   position: relative;
 
@@ -772,7 +780,7 @@ p {
     row-gap: 1rem;
     min-height: 4rem;
     box-shadow: 0 1.5rem 2.5rem -0.5rem rgba(30, 5, 70, 0.3);
-    padding: 2.25rem 2.25rem 2.5rem;
+    padding: 2.25rem 2.15rem 2.5rem;
     background: $color-primary;
     border-radius: 0.75rem;
     color: #fff;
@@ -799,7 +807,7 @@ p {
     h3 {
       display: flex;
       align-items: flex-end;
-      font-size: $font-size-h3;
+      font-size: $font-size-h3-sm;
       font-weight: 600;
       letter-spacing: -0.035rem;
       line-height: 1.1;
@@ -818,15 +826,43 @@ p {
     @media (max-width: $desk-sm) {
       row-gap: 1rem;
     }
+    @media (max-width: $tab-md) {
+      grid-template-rows: 7rem minmax(0.8rem, auto) minmax(3rem, auto);
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 992px) {
+    p {
+      font-size: 17px;
+    }
   }
 
   @media (max-width: $desk-sm) {
-    max-width: 480px;
+    max-width: 720px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+
+    .card:last-child {
+      margin: 0 auto;
+      grid-column: span 2;
+      max-width: 280px;
+    }
+  }
+
+  @media (max-width: $tab-md) {
+    max-width: 400px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin-left: auto;
     margin-right: auto;
     row-gap: 1.5rem;
+
+    .card:last-child {
+      margin: 0 auto;
+      grid-column: span 1;
+      max-width: inherit;
+    }
 
     h2 {
       margin-bottom: 4rem;
