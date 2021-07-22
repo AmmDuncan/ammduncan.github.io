@@ -1069,10 +1069,10 @@ p {
 }
 .about__content {
   width: 100%;
-  max-width: 880px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 6rem 4rem 4rem;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 3rem 4rem rgba(52, 4, 178, 0.2);
   border-radius: 1rem;
 }
@@ -1166,6 +1166,7 @@ p {
 }
 @media (max-width: 575px) {
   .about__header .skill__list li {
+    padding: 0.45rem 0.5rem;
     font-size: 12px;
   }
   .about__header .skill__list li .icon {

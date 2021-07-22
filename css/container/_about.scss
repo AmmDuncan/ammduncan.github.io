@@ -5,10 +5,10 @@
 
   &__content {
     width: 100%;
-    max-width: 880px;
+    max-width: 920px;
     margin: 0 auto;
     padding: 6rem 4rem 4rem;
-    background: rgba($color-white, 0.7);
+    background: rgba($color-white, 0.8);
     box-shadow: 0 3rem 4rem rgba($color-primary-dark, 0.2);
     border-radius: 1rem;
 
@@ -123,6 +123,7 @@
         }
 
         @media (max-width: 575px) {
+          padding: 0.45rem 0.5rem;
           font-size: 12px;
 
           .icon {
