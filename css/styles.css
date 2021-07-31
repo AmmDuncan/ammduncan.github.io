@@ -167,7 +167,7 @@ h5 {
 
 h1,
 h2 {
-  color: #47406b;
+  color: #332e4b;
 }
 
 h2 {
@@ -214,9 +214,9 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1.15rem 2.5rem;
+  padding: 1.1rem 2.25rem;
   box-sizing: border-box;
-  border-radius: 2rem;
+  border-radius: 0.75rem;
   text-transform: uppercase;
   font-weight: 500;
   transition: 0.15s ease-in-out;
@@ -227,15 +227,15 @@ p {
 }
 .btn:hover {
   transform: scale(1.02) translateY(-0.15rem);
-  box-shadow: 0 0.75rem 2rem -0.25rem rgba(52, 4, 178, 0.3);
+  box-shadow: 0 0.75rem 2rem -0.25rem rgba(50, 5, 165, 0.3);
 }
 .btn:active {
   transform: scale(0.99) translateY(0.035rem);
-  box-shadow: 0 0.75rem 1.75rem -0.25rem rgba(52, 4, 178, 0.3);
+  box-shadow: 0 0.75rem 1.75rem -0.25rem rgba(50, 5, 165, 0.3);
 }
 .btn.elevated {
-  box-shadow: 0 0.5rem 1.25rem rgba(52, 4, 178, 0.175), 0 0.75rem 1.25rem rgba(52, 4, 178, 0.05);
-  border-bottom: 4px solid rgba(52, 4, 178, 0.1);
+  box-shadow: 0 0.5rem 1.25rem rgba(50, 5, 165, 0.175), 0 0.75rem 1.25rem rgba(50, 5, 165, 0.05);
+  border-bottom: 4px solid rgba(50, 5, 165, 0.1);
 }
 @media (max-width: 640px) {
   .btn {
@@ -246,9 +246,9 @@ p {
 .btn--primary {
   background: #602fdf;
   color: #fff;
-  border-bottom: 4px solid rgba(52, 4, 178, 0.7);
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  border-bottom: 4px solid rgba(50, 5, 165, 0.8);
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 .btn--primary:hover img {
   animation: zoom 0.4s ease-in-out;
@@ -289,14 +289,27 @@ p {
   height: auto;
   z-index: 1000;
   /* display and box-model */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
-  box-shadow: 0 0.8rem 1.5rem rgba(52, 4, 178, 0.1);
+  border: 1px solid rgba(96, 47, 223, 0.1);
+  box-shadow: 0 0.8rem 1.5rem rgba(50, 5, 165, 0.1);
   /* other */
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   -moz-backdrop-filter: blur(1rem);
   font-family: "poppins", "segoe ui", sans-serif;
+}
+.navbar.rounded {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(96, 47, 223, 0.1);
+  background: rgba(255, 255, 255, 0.99);
+}
+@media (max-width: 767px) {
+  .navbar.rounded {
+    width: calc(100% - 1rem);
+    margin: 0.5rem;
+  }
 }
 .navbar:before {
   content: "";
@@ -348,7 +361,7 @@ p {
 .navbar .nav__brand a {
   display: flex;
   align-items: center;
-  color: #47406b;
+  color: #332e4b;
 }
 .navbar .nav__list {
   align-self: stretch;
@@ -363,8 +376,8 @@ p {
   margin-top: 8px;
 }
 .navbar .nav__list li.cta .btn {
-  border-bottom: 4px solid rgba(52, 4, 178, 0.05);
-  box-shadow: 0 0.15rem 0.5rem rgba(52, 4, 178, 0.15);
+  border-bottom: 4px solid rgba(50, 5, 165, 0.05);
+  box-shadow: 0 0.15rem 0.5rem rgba(50, 5, 165, 0.15);
 }
 .navbar .nav__link {
   height: 100%;
@@ -446,7 +459,7 @@ p {
     justify-content: center;
   }
   .navbar .nav .nav__link .active {
-    background: #3404b2;
+    background: #3205a5;
   }
 
   .navbar.open .nav__list {
@@ -750,7 +763,7 @@ p {
   height: 60%;
   bottom: 0rem;
   left: 0;
-  background: #3404b2;
+  background: #3205a5;
   z-index: -1;
 }
 @media (max-width: 992px) {
@@ -943,14 +956,14 @@ p {
 }
 
 .project-body {
-  background: #f2f2f5;
+  background: #eeeef3;
 }
 
 .projects-header {
   padding-top: 10rem;
   padding-bottom: 5rem;
   background-color: #ffffff;
-  color: #3404b2;
+  color: #3205a5;
   text-align: center;
 }
 .projects-header h1 {
@@ -967,7 +980,7 @@ p {
 .projects-header p {
   max-width: 35rem;
   margin: auto;
-  color: #47406b;
+  color: #332e4b;
 }
 
 .project-cards {
@@ -1015,17 +1028,17 @@ p {
 .project-card {
   width: 100%;
   overflow: hidden;
-  padding: 0.25rem;
+  padding: 0.35rem;
   border-radius: 0.75rem;
-  box-shadow: 0 1rem 2.5rem -0.05rem rgba(37, 8, 112, 0.2), 0 0.15rem 1.5rem rgba(37, 8, 112, 0.05);
-  background: #ffffff;
+  box-shadow: 0 0.45rem 0.5rem -0.005rem rgba(51, 46, 75, 0.15), 0 0.15rem 1.5rem rgba(51, 46, 75, 0.05);
+  background: rgba(255, 255, 255, 0.75);
   transition: 0.15s ease-out;
   cursor: pointer;
   z-index: 1;
 }
 .project-card__image {
   width: 100%;
-  border-radius: 0.55rem;
+  border-radius: 0.5rem;
   object-fit: cover;
   object-position: center top;
 }
@@ -1056,11 +1069,11 @@ p {
 }
 .project-card a {
   text-decoration: none;
-  color: #47406b;
+  color: #332e4b;
 }
 .project-card:hover {
-  transform: scale(1.012) translateY(-0.2rem);
-  box-shadow: 0 1.75rem 2.5rem -0.75rem rgba(52, 4, 178, 0.2), 0 0.5rem 1.5rem rgba(37, 8, 112, 0.05);
+  transform: scale(1.0125) translateY(-0.45rem);
+  box-shadow: 0 1.75rem 2rem -0.75rem rgba(51, 46, 75, 0.2), 0 0.25rem 0.25rem rgba(51, 46, 75, 0.035);
 }
 .project-card:hover a {
   text-decoration: underline;
@@ -1114,7 +1127,7 @@ p {
 .about__header .img img {
   display: block;
   position: relative;
-  width: 103%;
+  width: 110%;
   object-fit: cover;
   margin-left: -0.35rem;
   margin-top: -0.3rem;
@@ -1127,13 +1140,12 @@ p {
 .about__header h3 {
   font-size: 1.777rem;
   font-weight: 600;
-  color: #47406b;
+  color: #332e4b;
   letter-spacing: -0.05rem;
   text-transform: uppercase;
   margin-left: -0.15rem;
 }
 .about__header .tech-stack {
-  padding-left: 2rem;
   box-sizing: border-box;
 }
 @media (max-width: 767px) {
@@ -1156,7 +1168,7 @@ p {
   margin: 8px 0;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0.4rem 1rem rgba(52, 4, 178, 0.1), 0 0.1rem 0.2rem rgba(52, 4, 178, 0.05);
+  box-shadow: 0 0.4rem 1rem rgba(50, 5, 165, 0.1), 0 0.1rem 0.2rem rgba(50, 5, 165, 0.05);
   font-weight: 300;
   line-height: 1.4;
   background: rgba(255, 255, 255, 0.9);

@@ -103,9 +103,9 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1.15rem 2.5rem;
+  padding: 1.1rem 2.25rem;
   box-sizing: border-box;
-  border-radius: 2rem;
+  border-radius: 0.75rem;
   // border-radius: 0.5rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -141,9 +141,9 @@ p {
 .btn--primary {
   background: $color-primary-lighter;
   color: #fff;
-  border-bottom: 4px solid rgba($color-primary-dark, 0.7);
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  border-bottom: 4px solid rgba($color-primary-dark, 0.8);
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 
   &:hover {
     img {
@@ -192,16 +192,29 @@ p {
   z-index: 1000;
 
   /* display and box-model */
-  border-bottom: 1px solid rgba($color-white, 0.65);
+  border: 1px solid rgba($color-primary-lighter, 0.1);
   box-shadow: 0 0.8rem 1.5rem rgba($color-primary-dark, 0.1);
 
   /* other */
-  background: rgba($color-white, 0.7);
+  background: rgba($color-white, 0.75);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   -moz-backdrop-filter: blur(1rem);
   font-family: "poppins", "segoe ui", sans-serif;
   // font-family: "Plus Jakarta Sans", "segoe ui", sans-serif;
+
+  &.rounded {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba($color-primary-lighter, 0.1);
+    background: rgba($color-white, 0.99);
+
+    @media (max-width: $tab-md) {
+      width: calc(100% - 1rem);
+      margin: 0.5rem;
+    }
+  }
 
   &:before {
     content: "";
