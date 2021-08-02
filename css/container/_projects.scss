@@ -94,7 +94,7 @@
   overflow: hidden;
   padding: 0.35rem;
   // border: 1px solid rgba($color-primary, 0.05);
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   box-shadow: 0 0.45rem 0.5rem -0.005rem rgba($color-text, 0.15),
     0 0.15rem 1.5rem rgba($color-text, 0.05);
   background: rgba($color-white, 0.75);
@@ -104,7 +104,7 @@
 
   &__image {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     object-fit: cover;
     object-position: center top;
   }

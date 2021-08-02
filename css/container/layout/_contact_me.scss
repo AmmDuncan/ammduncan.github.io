@@ -1,0 +1,114 @@
+.contact-me {
+  background: rgba($color-primary-light, 0.2);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+  }
+
+  .mycontainer {
+    position: relative;
+    // background: rgba($color-primary-dark, 0.8);
+    // border-radius: 1rem;
+    // padding: 2rem 1rem 2rem 4rem;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+}
+
+.contact-me__form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 40rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+  margin: auto;
+  padding: 2rem 2rem;
+
+  label {
+    width: 100%;
+    display: block;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: rgba($color-text, 0.75);
+  }
+  input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 3rem;
+  }
+  textarea {
+    width: 100%;
+    min-height: 7.5rem;
+  }
+
+  input,
+  textarea {
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px solid rgba($color-primary-lighter, 0.25);
+    border-radius: 0.25rem;
+    // border-bottom-right-radius: 0;
+    // border-bottom-left-radius: 0;
+    padding: 0.75rem 0.75rem;
+    background: rgba($color-primary-light, 0.4);
+    transition: border 0.1s linear;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-family: "Sora";
+    color: $color-text;
+
+    &:focus {
+      border-bottom: 2px solid $color-primary-darkest;
+      outline: 0;
+    }
+  }
+
+  button {
+    font-family: "Sora";
+    margin: auto;
+
+    svg {
+      margin-right: 0.5rem;
+      margin-left: -0.5rem;
+      margin-bottom: -0.125rem;
+      transform: rotate(-20deg);
+    }
+    &:hover {
+      figure {
+        animation: shake 0.7s ease;
+      }
+    }
+  }
+
+  .form-element {
+    margin-top: 1.5rem;
+
+    &:nth-of-type(3) {
+      grid-column: span 2;
+    }
+
+    &:nth-of-type(4) {
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: $tab-md) {
+      &:nth-of-type(3) {
+        grid-column: span 1;
+      }
+
+      &:nth-of-type(4) {
+        grid-column: span 1;
+      }
+    }
+  }
+
+  @media (max-width: $tab-md) {
+    grid-template-columns: 1fr;
+  }
+}

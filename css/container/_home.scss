@@ -41,14 +41,21 @@
  * ======================================================================*/
 html {
   font-size: 15px;
-  font-family: "Poppins", "Segoe Ui", "Gill Sans Mt", sans-serif;
-  font-family: "Plus Jakarta Sans", "Segoe Ui", "Gill Sans Mt", sans-serif;
+  // font-family: "Poppins", "Segoe Ui", "Gill Sans Mt", sans-serif;
+  // font-family: "Plus Jakarta Sans", "Segoe Ui", "Gill Sans Mt", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   color: $color-text-lighter;
-  font-family: sora, sans-serif;
+  font-family: "sora", sans-serif;
+  overflow-x: hidden;
+  position: relative;
   // font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+button {
+  font-family: "Sora";
 }
 
 h1,
@@ -100,17 +107,20 @@ p {
 /* Buttons */
 .btn {
   min-height: 57px;
+  max-height: 3.5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 1.1rem 2.25rem;
+  padding: 1.15rem 2rem 1.1rem;
   box-sizing: border-box;
+  border: 0;
   border-radius: 0.75rem;
   // border-radius: 0.5rem;
   text-transform: uppercase;
   font-weight: 500;
-  transition: 0.15s ease-in-out;
+  transition: 0.025s ease-in-out;
   font-size: 1rem;
+  cursor: pointer;
   // font-family: "Poppins";
 
   img {
@@ -128,8 +138,8 @@ p {
   }
 
   &.elevated {
-    box-shadow: 0 0.5rem 1.25rem rgba($color-primary-dark, 0.175),
-      0 0.75rem 1.25rem rgba($color-primary-dark, 0.05);
+    box-shadow: 0 0.5rem 1.25rem -0.25rem rgba($color-primary-darkest, 0.3),
+      0 0.125rem 0.25rem rgba($color-primary-darkest, 0.05);
     border-bottom: 4px solid rgba($color-primary-dark, 0.1);
   }
 
@@ -141,9 +151,15 @@ p {
 .btn--primary {
   background: $color-primary-lighter;
   color: #fff;
-  border-bottom: 4px solid rgba($color-primary-dark, 0.8);
+  border-bottom: 4px solid rgba($color-primary-dark, 0.45);
   padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.15rem;
+
+  &.elevated {
+    box-shadow: 0 0.5rem 1rem -0.25rem rgba($color-primary-darkest, 0.5),
+      0 0.125rem 0.25rem rgba($color-primary-darkest, 0.05);
+    border-bottom: 5px solid rgba($color-primary-dark, 0.275);
+  }
 
   &:hover {
     img {
@@ -169,262 +185,22 @@ p {
 
 .underline {
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 
-  &:after {
-    content: "";
-    width: 5rem;
-    height: 0.25rem;
-    position: absolute;
-    bottom: -1.25rem;
-    background: $color-secondary;
-  }
+  // &:after {
+  //   content: "";
+  //   width: 5rem;
+  //   height: 0.25rem;
+  //   position: absolute;
+  //   bottom: -1.25rem;
+  //   background: $color-secondary;
+  // }
 }
 
 /* ======================================================================
  * NAVIGATION BAR
  * ======================================================================*/
-.navbar {
-  /* positioning */
-  position: fixed;
-  width: 100%;
-  height: auto;
-  z-index: 1000;
-
-  /* display and box-model */
-  border: 1px solid rgba($color-primary-lighter, 0.1);
-  box-shadow: 0 0.8rem 1.5rem rgba($color-primary-dark, 0.1);
-
-  /* other */
-  background: rgba($color-white, 0.75);
-  backdrop-filter: blur(1rem);
-  -webkit-backdrop-filter: blur(1rem);
-  -moz-backdrop-filter: blur(1rem);
-  font-family: "poppins", "segoe ui", sans-serif;
-  // font-family: "Plus Jakarta Sans", "segoe ui", sans-serif;
-
-  &.rounded {
-    width: calc(100% - 2rem);
-    margin: 1rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba($color-primary-lighter, 0.1);
-    background: rgba($color-white, 0.99);
-
-    @media (max-width: $tab-md) {
-      width: calc(100% - 1rem);
-      margin: 0.5rem;
-    }
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    z-index: -1;
-    filter: blur(1.5rem);
-    opacity: 0.45;
-    overflow: hidden;
-  }
-
-  @media (max-width: $tab-md) {
-    height: auto;
-
-    .mycontainer {
-      width: 100%;
-    }
-  }
-}
-
-.navbar .nav {
-  /* positioning */
-  height: 100%;
-  /* display and box-model */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  /* other */
-  font-weight: 400;
-
-  &__brand__container {
-    height: 4.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__brand {
-    // margin-left: 2rem;
-    font-size: 1.125rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-    img {
-      height: 20px;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      color: $color-text;
-    }
-  }
-
-  &__list {
-    align-self: stretch;
-    display: flex;
-    align-items: stretch;
-    transition: 0.2s ease-in-out;
-
-    li {
-      height: 100%;
-
-      &.cta {
-        margin-top: 8px;
-
-        .btn {
-          border-bottom: 4px solid rgba($color-primary-dark, 0.05);
-          box-shadow: 0 0.15rem 0.5rem rgba($color-primary-dark, 0.15);
-        }
-      }
-    }
-  }
-
-  &__link {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
-    color: #303030;
-    font-size: 1rem;
-    text-transform: uppercase;
-
-    &:hover {
-      color: $color-primary;
-    }
-
-    &.active {
-      font-weight: 600;
-    }
-  }
-
-  &__opener {
-    height: 2.3rem;
-    display: none;
-    align-self: center;
-    align-items: flex-end;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    border-radius: 4px;
-    margin: 4px;
-    padding: 0.8rem 1.2rem;
-    cursor: pointer;
-    transition: 0.3s ease-out;
-
-    .bar {
-      width: 2.5rem;
-      height: 3px;
-      display: inline-block;
-      border-radius: 8px;
-      background: $color-primary;
-      transition: inherit;
-
-      &:nth-child(2) {
-        width: 1.5rem;
-        align-self: flex-end;
-      }
-    }
-  }
-
-  @media (max-width: $tab-md) {
-  }
-}
-
-/* -------------------------------------
- * Collapse Navbar on Tablets and below 
- * -------------------------------------*/
-@media (max-width: $tab-md) {
-  .navbar .nav {
-    flex-flow: column;
-    align-items: stretch;
-    padding-right: 4px;
-
-    .nav__brand__container {
-      flex: 65px;
-      align-items: center;
-      padding-left: 5%;
-
-      .nav__opener {
-        display: flex;
-        box-sizing: content-box;
-      }
-    }
-
-    .nav__list {
-      max-height: 0;
-      width: 99%;
-      flex-flow: column;
-      align-items: stretch;
-      margin-left: 1%;
-      overflow-y: hidden;
-      background: rgba($color-white, 0.45);
-      border-radius: 4px;
-      list-style-type: none;
-
-      li {
-        display: flex;
-        align-items: center;
-        // border-top: 1px solid rgba($color-primary, 0.1);
-      }
-    }
-
-    .nav__link {
-      width: 100%;
-      padding: 1.3rem 4%;
-      justify-content: center;
-      // font-size: $font-size-body-larger;
-
-      .active {
-        background: $color-primary-dark;
-      }
-    }
-  }
-
-  .navbar.open .nav {
-    &__list {
-      max-height: 300px;
-      margin-bottom: 8px;
-    }
-
-    &__opener {
-      height: 2.5rem;
-      .bar {
-        // margin-right: 0.5rem;
-
-        &:nth-child(1) {
-          transform: rotate(-45deg);
-          transform-origin: top right;
-        }
-
-        &:nth-child(2) {
-          align-self: center;
-          width: 0;
-        }
-
-        &:nth-child(3) {
-          transform: rotate(45deg);
-          transform-origin: bottom right;
-        }
-      }
-    }
-  }
-}
+@import "./layout/navbar";
 
 /* ======================================================================
  * MAIN SECTIONS
@@ -448,279 +224,14 @@ p {
 /* ======================================================================
  * HEADER & HERO
  * ======================================================================*/
-.header {
-  padding-bottom: 25vh;
-  min-height: 90vh;
-  max-height: 800px;
-  box-sizing: border-box;
-  background-image: radial-gradient(
-      circle,
-      rgba($color-primary-light, 0.4) 45%,
-      rgba($color-primary-light, 0.7)
-    ),
-    url("../img/herobg-center.png");
-  background-size: cover;
-  background-position: center center;
-  transition: 0.5s ease-in-out;
-
-  @media (max-width: $tab-sm) {
-    padding-bottom: 20vh;
-    background-position: center top;
-    background-image: radial-gradient(
-        circle,
-        rgba($color-primary-light, 0.4) 45%,
-        rgba($color-primary-light, 0.7)
-      ),
-      url("../img/herobg-center-mob.png");
-  }
-}
-
-.hero .content {
-  max-width: 45rem;
-  box-sizing: border-box;
-  padding-top: 22.5vh;
-  margin: auto;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-
-  h3 {
-    margin: 1rem 0 2.25rem;
-    font-size: $font-size-h3-sm;
-    font-family: "sora", sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.4;
-
-    @media (max-width: $tab-md) {
-      font-size: $font-size-body-larger;
-      margin-bottom: 2rem;
-    }
-    @media (max-width: $mob-md) {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-  }
-
-  h1 {
-    margin-bottom: 1.75rem;
-    font-size: $font-size-display;
-    font-weight: 600;
-    letter-spacing: -0.16rem;
-    line-height: 1.05;
-    animation: bounce-in 0.5s ease-out forwards;
-    text-align: center;
-
-    &.go {
-      animation: slide-down-out 0.5s ease-in-out forwards;
-    }
-
-    .highlight {
-      position: relative;
-      display: inline-block;
-      color: $color-primary;
-    }
-
-    @media (max-width: $desk-md) {
-      font-size: $font-size-display-sm;
-    }
-
-    @media (max-width: $tab-md) {
-      font-size: $font-size-h1;
-      max-width: 32rem;
-    }
-
-    @media (max-width: $mob-md) {
-      font-size: $font-size-h1-sm;
-      max-width: 32rem;
-    }
-  }
-
-  .ctas {
-    display: flex;
-    align-items: center;
-    margin-top: 1.5rem;
-
-    .btn {
-      &--primary {
-        margin-right: 1rem;
-      }
-    }
-
-    @media screen and (max-width: $mob-md) {
-      width: 100%;
-      flex-flow: column;
-      align-items: stretch;
-
-      .btn--primary {
-        margin-bottom: 1rem;
-        margin-right: 0;
-      }
-    }
-  }
-
-  @media (min-width: $desk-md) {
-    max-width: 48rem;
-  }
-  @media screen and (max-width: $tab-md) {
-    max-width: 35rem;
-    padding-top: 17.5vh;
-  }
-}
+@import "./layout/header";
+@import "./layout/dev_header";
+@import "./components/spinning-icons";
 
 /* ======================================================================
  * WHAT I DO - SECTION
  * ======================================================================*/
-.what-i-do {
-  background: #ffffff;
-  padding-top: 8rem;
-  padding-bottom: 3rem;
-}
-
-.what-i-do__content {
-  h2 {
-    text-align: center;
-    margin-bottom: 5rem;
-
-    &:after {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  .child {
-    display: flex;
-    margin-bottom: 5rem;
-
-    .text {
-      max-width: 40rem;
-      flex: 1 1 40%;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      line-height: 1.6;
-
-      h3 {
-        margin-bottom: 1.25rem;
-        font-size: $font-size-h3;
-        text-transform: capitalize;
-        line-height: 1.25;
-        font-weight: 500;
-        letter-spacing: -0.05rem;
-        max-width: 300px;
-
-        @media (max-width: $mob-lg) {
-          font-size: $font-size-h3-sm;
-          line-height: 1.4;
-          letter-spacing: -0.075rem;
-        }
-      }
-    }
-
-    .img {
-      flex: 1 1 58%;
-      display: flex;
-      align-items: center;
-
-      img {
-        max-width: 35rem;
-        width: 80%;
-        margin: 0 10%;
-      }
-    }
-
-    @media screen and (max-width: 800px) {
-      width: 95%;
-      max-width: 480px;
-      flex-flow: column;
-      margin-left: auto;
-      margin-right: auto;
-
-      .text {
-        h3 {
-          max-width: 340px;
-        }
-      }
-
-      .img {
-        margin-top: 2.75rem;
-        margin-bottom: 3rem;
-      }
-    }
-
-    @media screen and (max-width: $mob-lg) {
-      .text h3 {
-        max-width: 280px;
-        margin-bottom: 0.75rem;
-        font-size: $font-size-h3-sm;
-        letter-spacing: -0.025rem;
-      }
-    }
-  }
-
-  .dynamic-sites {
-    .child {
-      display: flex;
-
-      .text {
-        order: 1;
-
-        h3 {
-          max-width: 325px;
-        }
-      }
-      .img {
-        order: -1;
-      }
-
-      @media screen and (max-width: 800px) {
-        .text {
-          order: 1;
-
-          h3 {
-            max-width: 360px;
-          }
-        }
-        .img {
-          order: 2;
-        }
-      }
-      @media screen and (max-width: $mob-lg) {
-        .text {
-          h3 {
-            width: 100%;
-            max-width: 295px;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    padding: 6rem 0 6rem;
-
-    h2 {
-      max-width: 480px;
-      width: 95%;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
-      margin-bottom: 5rem;
-
-      &:after {
-        left: 0.25rem;
-        transform: translateX(0);
-      }
-    }
-  }
-  @media screen and (max-width: $mob-lg) {
-    h2 {
-      margin-bottom: 3rem;
-    }
-  }
-}
+@import "./layout/what_i_do";
 
 /* ======================================================================
 * WHY CHOOSE ME - SECTION
@@ -761,7 +272,7 @@ p {
   h2 {
     text-align: center;
     font-family: $font-family-heading;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 
     &:after {
       left: 50%;
@@ -771,6 +282,14 @@ p {
 
   @media (max-width: $desk-sm) {
     padding: 8rem 0 6rem;
+
+    h2 {
+      color: white;
+    }
+  }
+
+  @media (max-width: $tab-sm) {
+    padding: 4rem 0 4rem;
 
     h2 {
       color: white;
@@ -949,4 +468,46 @@ p {
       }
     }
   }
+
+  &.dev {
+    margin-top: 1rem;
+  }
+}
+
+/* ======================================================================
+ * CONTACT ME - SECTION
+ * ======================================================================*/
+@import "./layout/contact_me";
+
+/* ======================================================================
+ * FOOTER - SECTION
+ * ======================================================================*/
+@import "./layout/footer";
+
+/* ======================================================================
+  * OTHER
+  * ======================================================================*/
+@import "./components/choice_card";
+
+#fab {
+  z-index: 2000;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 6rem;
+  min-height: 6rem;
+  padding: 0.125rem;
+  border-radius: 50%;
+  box-shadow: 0 0.75rem 2.5rem rgba($color-primary-darkest, 0.35);
+  transition: 0.5s 0.2s ease-out;
+
+  &.hide {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+}
+
+*.remove {
+  display: none !important;
 }

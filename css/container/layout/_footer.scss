@@ -1,0 +1,42 @@
+footer {
+  box-sizing: border-box;
+  min-height: 6rem;
+
+  padding: 3rem;
+  background: #0b0027;
+  color: rgba($color-white, 0.75);
+  font-weight: 300;
+
+  .bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .social {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+
+      &__link {
+        filter: saturate(0);
+
+        &:hover {
+          filter: saturate(1);
+        }
+      }
+    }
+
+    @media (max-width: $tab-sm) {
+      flex-flow: column nowrap;
+
+      .copyright {
+        text-align: center;
+        line-height: 161.8%;
+      }
+
+      .social {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

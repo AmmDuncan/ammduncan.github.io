@@ -1,13 +1,14 @@
 /* COLORS */
-$color-primary-lighter: rgb(96, 47, 223);
+$color-primary-lighter: rgb(110, 61, 233);
 $color-primary: rgb(82, 34, 208);
-$color-primary-dark: rgb(50, 5, 165);
+$color-primary-dark: #3404b2;
 $color-primary-darkest: rgb(37, 8, 112);
 $color-primary-light: #ded6f1;
 $color-secondary: #dd9742;
 $color-text: #332e4b;
 $color-text-lighter: #524f69;
 $color-white: #ffffff;
+$color-bg: #f3f1f6;
 
 // color-codes
 $color-primary-code: 82, 34, 208;
@@ -42,5 +43,6 @@ $tab-md: 767px;
 $tab-lg: 820px;
 
 $desk-sm: 992px;
+$desk-smd: 1060px;
 $desk-md: 1400px;
 $desk-lg: 1920px;
