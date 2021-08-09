@@ -297,6 +297,7 @@ p {
   box-shadow: 0 0.8rem 1.5rem rgba(52, 4, 178, 0.1);
   /* other */
   background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   -moz-backdrop-filter: blur(1rem);
@@ -356,12 +357,17 @@ p {
   white-space: nowrap;
 }
 .navbar .nav__brand img {
-  height: 20px;
+  height: 24px;
+  margin-top: -0.15rem;
+  padding-right: 0.25rem;
 }
 .navbar .nav__brand a {
   display: flex;
+  align-items: flex-end;
   align-items: center;
-  color: #332e4b;
+  color: #5222d0;
+  font-weight: 400;
+  letter-spacing: 0.075rem;
 }
 .navbar .nav__list {
   align-self: stretch;
@@ -661,7 +667,7 @@ p {
 }
 .col-2 .content {
   display: block;
-  padding: 3rem 0rem 3rem 1rem;
+  padding: 3rem 0rem 3.5rem 1rem;
   text-align: left;
   margin: 0;
 }

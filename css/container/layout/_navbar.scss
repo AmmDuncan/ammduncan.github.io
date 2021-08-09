@@ -11,6 +11,7 @@
 
   /* other */
   background: rgba($color-white, 0.75);
+  background: rgba($color-white, 0.95);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   -moz-backdrop-filter: blur(1rem);
@@ -81,13 +82,18 @@
     white-space: nowrap;
 
     img {
-      height: 20px;
+      height: 24px;
+      margin-top: -0.15rem;
+      padding-right: 0.25rem;
     }
 
     a {
       display: flex;
+      align-items: flex-end;
       align-items: center;
-      color: $color-text;
+      color: $color-primary;
+      font-weight: 400;
+      letter-spacing: 0.075rem;
     }
   }
 
