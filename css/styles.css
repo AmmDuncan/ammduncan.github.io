@@ -252,15 +252,15 @@ p {
 }
 
 .btn--primary {
-  background: #6e3de9;
+  background: #5222d0;
   color: #fff;
-  border-bottom: 4px solid rgba(52, 4, 178, 0.45);
+  border-bottom: 4px solid rgba(52, 4, 178, 0.25);
   padding-top: 1.2rem;
   padding-bottom: 1.15rem;
 }
 .btn--primary.elevated {
   box-shadow: 0 0.5rem 1rem -0.25rem rgba(37, 8, 112, 0.5), 0 0.125rem 0.25rem rgba(37, 8, 112, 0.05);
-  border-bottom: 5px solid rgba(52, 4, 178, 0.275);
+  border-bottom: 5px solid rgba(52, 4, 178, 0.45);
 }
 .btn--primary:hover img {
   animation: zoom 0.4s ease-in-out;

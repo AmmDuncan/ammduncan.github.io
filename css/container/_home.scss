@@ -149,16 +149,16 @@ p {
 }
 
 .btn--primary {
-  background: $color-primary-lighter;
+  background: $color-primary;
   color: #fff;
-  border-bottom: 4px solid rgba($color-primary-dark, 0.45);
+  border-bottom: 4px solid rgba($color-primary-dark, 0.25);
   padding-top: 1.2rem;
   padding-bottom: 1.15rem;
 
   &.elevated {
     box-shadow: 0 0.5rem 1rem -0.25rem rgba($color-primary-darkest, 0.5),
       0 0.125rem 0.25rem rgba($color-primary-darkest, 0.05);
-    border-bottom: 5px solid rgba($color-primary-dark, 0.275);
+    border-bottom: 5px solid rgba($color-primary-dark, 0.45);
   }
 
   &:hover {
