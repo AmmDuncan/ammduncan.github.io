@@ -325,6 +325,7 @@ p {
     height: auto;
   }
   .navbar .mycontainer {
+    max-width: 100%;
     width: 100%;
   }
 }
@@ -408,7 +409,7 @@ p {
   justify-content: space-around;
   border-radius: 4px;
   margin: 4px;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 0.8rem 0.8rem;
   cursor: pointer;
   transition: 0.3s ease-out;
 }
@@ -431,7 +432,6 @@ p {
   .navbar .nav {
     flex-flow: column;
     align-items: stretch;
-    padding-right: 4px;
   }
   .navbar .nav .nav__brand__container {
     box-sizing: border-box;
