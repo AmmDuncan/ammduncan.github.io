@@ -79,8 +79,8 @@
 
     @media (max-width: $tab-md) {
       font-size: $font-size-h1;
-      font-size: $font-size-display-xsm;
-      max-width: 34rem;
+      // font-size: $font-size-display-xsm;
+      max-width: 30rem;
     }
 
     @media (max-width: 576px) {

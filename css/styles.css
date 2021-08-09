@@ -389,7 +389,7 @@ p {
   padding-right: 1.15rem;
   color: #303030;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   opacity: 0.6;
   text-transform: uppercase;
 }
@@ -397,7 +397,7 @@ p {
   color: #5222d0;
 }
 .navbar .nav__link.active {
-  font-weight: 500;
+  font-weight: 600;
   opacity: 1;
 }
 .navbar .nav__opener {
@@ -591,8 +591,7 @@ p {
 @media (max-width: 767px) {
   .hero .content h1 {
     font-size: 3.157rem;
-    font-size: 3.59rem;
-    max-width: 34rem;
+    max-width: 30rem;
   }
 }
 @media (max-width: 576px) {
