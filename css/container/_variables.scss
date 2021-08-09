@@ -20,8 +20,10 @@ $color-secondary-code: 221, 151, 66;
 //$font-size-display: 4.209rem;
 $font-size-display: 4.7rem;
 $font-size-display-sm: 4.209rem;
+$font-size-display-xsm: 3.59rem;
 $font-size-h1: 3.157rem;
 $font-size-h1-sm: 2.8rem;
+$font-size-h1-xsm: 2.5rem;
 $font-size-h2: 2.369rem;
 $font-size-h2-sm: 1.953rem;
 $font-size-h3: 1.777rem;
@@ -35,6 +37,7 @@ $font-family-heading: "poppins", "segoe ui", "gill  sans mt", sans-serif;
 
 /* BREAKPOINTS */
 $mob-sm: 320px;
+$mob-xmd: 380px;
 $mob-md: 480px;
 $mob-lg: 575px;
 

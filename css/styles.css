@@ -97,12 +97,14 @@ a {
 }
 @keyframes bounce-in {
   0% {
-    transform: translateY(-2.5rem);
+    transform: translateY(-4rem);
     opacity: 0;
   }
-  50% {
-    transform: translateY(0);
+  55% {
     opacity: 1;
+  }
+  65% {
+    transform: translateY(0);
   }
 }
 @keyframes slide-down-out {
@@ -110,7 +112,7 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
-  70% {
+  80% {
     transform: translateY(3.5rem);
     opacity: 0;
   }
@@ -293,7 +295,7 @@ p {
   height: auto;
   z-index: 1000;
   /* display and box-model */
-  border-bottom: 1px solid rgba(110, 61, 233, 0.2);
+  border-bottom: 1px solid rgba(110, 61, 233, 0.15);
   /* other */
   animation: dropdown 0.3s ease-out alternate;
   background: rgba(255, 255, 255, 0.75);
@@ -333,7 +335,7 @@ p {
   font-weight: 400;
 }
 .navbar .nav__brand__container {
-  height: 4.5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -384,7 +386,6 @@ p {
   font-weight: 400;
   opacity: 0.6;
   text-transform: uppercase;
-  letter-spacing: 0.025rem;
 }
 .navbar .nav__link:hover {
   color: #5222d0;
@@ -394,7 +395,7 @@ p {
   opacity: 1;
 }
 .navbar .nav__opener {
-  height: 2.3rem;
+  height: 2rem;
   display: none;
   align-self: center;
   align-items: flex-end;
@@ -407,15 +408,15 @@ p {
   transition: 0.3s ease-out;
 }
 .navbar .nav__opener .bar {
-  width: 2.5rem;
-  height: 3px;
+  width: 2rem;
+  height: 2px;
   display: inline-block;
   border-radius: 8px;
   background: #5222d0;
   transition: inherit;
 }
 .navbar .nav__opener .bar:nth-child(2) {
-  width: 1.5rem;
+  width: 1.25rem;
   align-self: flex-end;
 }
 /* -------------------------------------
@@ -429,7 +430,6 @@ p {
   }
   .navbar .nav .nav__brand__container {
     box-sizing: border-box;
-    flex: 65px;
     align-items: center;
     padding-left: 5%;
   }
@@ -466,7 +466,7 @@ p {
     margin-bottom: 8px;
   }
   .navbar.open .nav__opener {
-    height: 2.5rem;
+    height: 2.05rem;
   }
   .navbar.open .nav__opener .bar:nth-child(1) {
     transform: rotate(-45deg);
@@ -514,13 +514,13 @@ p {
  * ======================================================================*/
 .header {
   padding-bottom: 25vh;
-  min-height: 90vh;
+  min-height: 100vh;
   max-height: 800px;
   box-sizing: border-box;
   background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center.png");
   background-size: cover;
   background-position: center center;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 @media (max-width: 640px) {
   .header {
@@ -586,13 +586,25 @@ p {
 @media (max-width: 767px) {
   .hero .content h1 {
     font-size: 3.157rem;
-    max-width: 32rem;
+    font-size: 3.59rem;
+    max-width: 34rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero .content h1 {
+    max-width: 30rem;
   }
 }
 @media (max-width: 480px) {
   .hero .content h1 {
-    font-size: 2.8rem;
-    max-width: 32rem;
+    font-size: 3.157rem;
+    max-width: 26rem;
+  }
+}
+@media (max-width: 380px) {
+  .hero .content h1 {
+    font-size: 2.5rem;
+    max-width: 26rem;
   }
 }
 .hero .content .ctas {
@@ -603,8 +615,9 @@ p {
 .hero .content .ctas .btn--primary {
   margin-right: 1rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575px) {
   .hero .content .ctas {
+    max-width: 20rem;
     width: 100%;
     flex-flow: column;
     align-items: stretch;
@@ -633,7 +646,7 @@ p {
   display: flex;
   align-items: stretch;
   box-sizing: border-box;
-  padding: 7rem 1rem 1.5rem;
+  padding: 6.125rem 1rem 1.5rem;
   background: #6c56db;
   background: #eeebfa;
 }
@@ -1589,7 +1602,7 @@ footer .bar .social__link:hover {
 }
 
 .project-body {
-  background: #eeeef3;
+  background: #f3f3f8;
 }
 
 .projects-header {

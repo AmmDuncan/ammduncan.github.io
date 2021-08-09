@@ -1,6 +1,6 @@
 .header {
   padding-bottom: 25vh;
-  min-height: 90vh;
+  min-height: 100vh;
   max-height: 800px;
   box-sizing: border-box;
   background-image: radial-gradient(
@@ -11,7 +11,7 @@
     url("../img/herobg-center.png");
   background-size: cover;
   background-position: center center;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 
   @media (max-width: $tab-sm) {
     padding-bottom: 20vh;
@@ -79,12 +79,22 @@
 
     @media (max-width: $tab-md) {
       font-size: $font-size-h1;
-      max-width: 32rem;
+      font-size: $font-size-display-xsm;
+      max-width: 34rem;
+    }
+
+    @media (max-width: 576px) {
+      max-width: 30rem;
     }
 
     @media (max-width: $mob-md) {
-      font-size: $font-size-h1-sm;
-      max-width: 32rem;
+      font-size: $font-size-h1;
+      max-width: 26rem;
+    }
+
+    @media (max-width: $mob-xmd) {
+      font-size: $font-size-h1-xsm;
+      max-width: 26rem;
     }
   }
 
@@ -99,7 +109,8 @@
       }
     }
 
-    @media screen and (max-width: $mob-md) {
+    @media screen and (max-width: $mob-lg) {
+      max-width: 20rem;
       width: 100%;
       flex-flow: column;
       align-items: stretch;

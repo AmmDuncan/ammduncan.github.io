@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const checkForChoice = () => {
     const choiceInLocalStorage = getFromLocalStorage();
-    console.log(choiceInLocalStorage);
     if (!choiceInLocalStorage) {
       openModal();
     } else {
@@ -88,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
    * SETUP PAGE BASED ON CHOICE   *
    * ============================ */
   const removeAll = (type) => {
-    console.log("removing items" + type);
     let itemsToRemove = null;
     let itemsToStay = null;
     if (type === "dev") {

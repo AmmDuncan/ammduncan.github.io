@@ -49,4 +49,4 @@ function run() {
   }, 300);
 }
 
-setInterval(run, 3000);
+setInterval(run, 5000);
