@@ -533,7 +533,7 @@ p {
 @media (max-width: 640px) {
   .header {
     background-position: center top;
-    background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center-mob.png");
+    background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center-mob.jpg");
   }
 }
 
