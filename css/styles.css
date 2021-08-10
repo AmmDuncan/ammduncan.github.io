@@ -991,7 +991,6 @@ p {
   flex-basis: 50%;
   box-shadow: 0.35rem 0.35rem 0.85rem inset rgba(0, 0, 0, 0.15);
   background: rgba(51, 46, 75, 0.8);
-  aspect-ratio: 9/5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1022,6 +1021,8 @@ p {
   }
   .what-i-do__content .child .img {
     margin-top: 2.75rem;
+    padding-top: 2rem;
+    aspect-ratio: 9/5.25;
     max-height: 18rem;
     border-radius: 0.5rem;
     order: 1;
@@ -1033,6 +1034,13 @@ p {
     margin-bottom: 0.75rem;
     font-size: 1.577rem;
     letter-spacing: -0.025rem;
+  }
+  .what-i-do__content .child .img {
+    padding-top: 2rem;
+    max-height: 15rem;
+  }
+  .what-i-do__content .child .img img {
+    height: 115%;
   }
 }
 .what-i-do__content .dynamic-sites .child .text {
@@ -1061,7 +1069,7 @@ p {
   }
   .what-i-do__content .dynamic-sites .child .text h3 {
     width: 100%;
-    max-width: 295px;
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 480px) {
