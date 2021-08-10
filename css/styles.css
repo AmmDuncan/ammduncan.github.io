@@ -518,9 +518,11 @@ p {
  * HEADER & HERO
  * ======================================================================*/
 .header {
-  padding-bottom: 25vh;
+  display: flex;
+  align-items: center;
   min-height: 100vh;
-  max-height: 800px;
+  height: 620px;
+  padding: 7rem 0;
   box-sizing: border-box;
   background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center.png");
   background-size: cover;
@@ -529,7 +531,6 @@ p {
 }
 @media (max-width: 640px) {
   .header {
-    padding-bottom: 20vh;
     background-position: center top;
     background-image: radial-gradient(circle, rgba(222, 214, 241, 0.4) 45%, rgba(222, 214, 241, 0.7)), url("../img/herobg-center-mob.png");
   }
@@ -538,14 +539,13 @@ p {
 .hero .content {
   max-width: 45rem;
   box-sizing: border-box;
-  padding-top: 22.5vh;
   margin: auto;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 .hero .content h3 {
-  margin: 1rem 0 2.25rem;
+  margin: 1rem 0 1.5rem;
   font-size: 1.577rem;
   font-family: "sora", sans-serif;
   font-weight: 300;
@@ -557,17 +557,16 @@ p {
 @media (max-width: 767px) {
   .hero .content h3 {
     font-size: 1.333rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
   }
 }
 @media (max-width: 480px) {
   .hero .content h3 {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
   }
 }
 .hero .content h1 {
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.25rem;
   font-size: 4.7rem;
   font-weight: 600;
   letter-spacing: -0.16rem;
@@ -590,19 +589,26 @@ p {
 }
 @media (max-width: 767px) {
   .hero .content h1 {
-    font-size: 3.157rem;
-    max-width: 30rem;
+    font-size: 3.59rem;
+    max-width: 36rem;
   }
 }
 @media (max-width: 576px) {
   .hero .content h1 {
+    font-size: 3.157rem;
     max-width: 30rem;
+  }
+}
+@media (max-width: 520px) {
+  .hero .content h1 {
+    font-size: 3.157rem;
+    max-width: 26rem;
   }
 }
 @media (max-width: 480px) {
   .hero .content h1 {
-    font-size: 3.157rem;
-    max-width: 26rem;
+    font-size: 2.8rem;
+    max-width: 22rem;
   }
 }
 @media (max-width: 320px) {
@@ -614,7 +620,7 @@ p {
 .hero .content .ctas {
   display: flex;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .hero .content .ctas .btn--primary {
   margin-right: 1rem;
@@ -639,7 +645,6 @@ p {
 @media screen and (max-width: 767px) {
   .hero .content {
     max-width: 35rem;
-    padding-top: 17.5vh;
   }
 }
 
@@ -647,6 +652,7 @@ p {
   position: relative;
   max-height: 100%;
   min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: stretch;
   box-sizing: border-box;

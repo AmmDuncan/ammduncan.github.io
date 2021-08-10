@@ -1,7 +1,11 @@
 .header {
-  padding-bottom: 25vh;
+  display: flex;
+  align-items: center;
+  // padding-bottom: 25vh;
   min-height: 100vh;
-  max-height: 800px;
+  height: 620px;
+  // max-height: 800px;
+  padding: 7rem 0;
   box-sizing: border-box;
   background-image: radial-gradient(
       circle,
@@ -14,7 +18,7 @@
   transition: 0.4s ease-in-out;
 
   @media (max-width: $tab-sm) {
-    padding-bottom: 20vh;
+    // padding-bottom: 20vh;
     background-position: center top;
     background-image: radial-gradient(
         circle,
@@ -28,14 +32,14 @@
 .hero .content {
   max-width: 45rem;
   box-sizing: border-box;
-  padding-top: 22.5vh;
+  // padding-top: 22.5vh;
   margin: auto;
   display: flex;
   flex-flow: column;
   align-items: center;
 
   h3 {
-    margin: 1rem 0 2.25rem;
+    margin: 1rem 0 1.5rem;
     font-size: $font-size-h3-sm;
     font-family: "sora", sans-serif;
     font-weight: 300;
@@ -46,16 +50,16 @@
 
     @media (max-width: $tab-md) {
       font-size: $font-size-body-larger;
-      margin-bottom: 2rem;
+      margin-bottom: 1.25rem;
     }
     @media (max-width: $mob-md) {
       font-size: 1.25rem;
-      margin-bottom: 2rem;
+      // margin-bottom: 1.25rem;
     }
   }
 
   h1 {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.25rem;
     font-size: $font-size-display;
     font-weight: 600;
     letter-spacing: -0.16rem;
@@ -78,18 +82,23 @@
     }
 
     @media (max-width: $tab-md) {
-      font-size: $font-size-h1;
-      // font-size: $font-size-display-xsm;
-      max-width: 30rem;
+      font-size: $font-size-display-xsm;
+      max-width: 36rem;
     }
 
     @media (max-width: 576px) {
+      font-size: $font-size-h1;
       max-width: 30rem;
     }
 
-    @media (max-width: $mob-md) {
+    @media (max-width: $mob-xlg) {
       font-size: $font-size-h1;
       max-width: 26rem;
+    }
+
+    @media (max-width: $mob-md) {
+      font-size: $font-size-h1-sm;
+      max-width: 22rem;
     }
 
     @media (max-width: $mob-sm) {
@@ -101,7 +110,7 @@
   .ctas {
     display: flex;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 
     .btn {
       &--primary {
@@ -127,6 +136,6 @@
   }
   @media screen and (max-width: $tab-md) {
     max-width: 35rem;
-    padding-top: 17.5vh;
+    // padding-top: 17.5vh;
   }
 }
