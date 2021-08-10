@@ -204,11 +204,12 @@
         // padding-left: 2rem;
 
         .spinning-icons {
-          width: 35vw;
-          height: 35vw;
+          width: 37.5vw;
+          height: 37.5vw;
         }
 
         .icon {
+          width: 20%;
           max-width: 6rem;
           margin-left: 0rem;
         }
@@ -216,6 +217,7 @@
         .plus-sign {
           padding-top: 1rem;
           padding-left: 1.5rem;
+          font-size: $font-size-h2;
         }
       }
     }

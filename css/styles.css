@@ -234,6 +234,7 @@ p {
 }
 .btn img {
   margin-right: 0.75rem;
+  width: 1.25rem;
 }
 .btn:hover {
   transform: scale(1.02) translateY(-0.15rem);
@@ -832,16 +833,18 @@ p {
     margin-right: -2rem;
   }
   .col-2 .illustration .details .spinning-icons {
-    width: 35vw;
-    height: 35vw;
+    width: 37.5vw;
+    height: 37.5vw;
   }
   .col-2 .illustration .details .icon {
+    width: 20%;
     max-width: 6rem;
     margin-left: 0rem;
   }
   .col-2 .illustration .details .plus-sign {
     padding-top: 1rem;
     padding-left: 1.5rem;
+    font-size: 2.369rem;
   }
 }
 
@@ -979,8 +982,8 @@ p {
 }
 .what-i-do__content .child .img img {
   max-width: 35rem;
-  width: 80%;
-  margin: 0 10%;
+  width: 70%;
+  margin: 0 15%;
 }
 @media screen and (max-width: 800px) {
   .what-i-do__content .child {
