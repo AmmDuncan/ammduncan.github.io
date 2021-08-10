@@ -939,6 +939,9 @@ p {
   padding-bottom: 3rem;
 }
 
+.what-i-do__content {
+  max-width: 1024px;
+}
 .what-i-do__content h2 {
   text-align: center;
   margin-bottom: 3rem;
@@ -976,14 +979,14 @@ p {
   }
 }
 .what-i-do__content .child .img {
-  flex: 1 1 58%;
+  flex: 1 1 50%;
   display: flex;
   align-items: center;
 }
 .what-i-do__content .child .img img {
   max-width: 35rem;
-  width: 70%;
-  margin: 0 15%;
+  width: 80%;
+  margin: 0 10%;
 }
 @media screen and (max-width: 800px) {
   .what-i-do__content .child {
