@@ -605,10 +605,10 @@ p {
     max-width: 26rem;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 320px) {
   .hero .content h1 {
     font-size: 2.5rem;
-    max-width: 26rem;
+    max-width: 22rem;
   }
 }
 .hero .content .ctas {
