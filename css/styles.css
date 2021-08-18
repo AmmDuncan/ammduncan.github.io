@@ -707,7 +707,7 @@ p {
   text-transform: uppercase;
 }
 .col-2 .content p {
-  max-width: 20rem;
+  max-width: 24rem;
   margin-bottom: 2rem;
 }
 .col-2 .content .ctas {
@@ -1668,7 +1668,7 @@ footer .bar .social__link:hover {
   text-align: center;
 }
 .projects-header h1 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.125rem;
   font-size: 3.157rem;
   font-weight: 600;
   text-transform: uppercase;
