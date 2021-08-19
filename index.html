@@ -506,10 +506,16 @@
         email: email,
         message: message
       }, "user_SH4J8t0JF2QEaDKCvIKk8").then(response => {
-        contactForm.reset()
+        // contactForm.reset()
         console.log("Success", response.status, response.text)
+        const contactSectionContainer = document.querySelector(".contact-me .mycontainer")
+        const content = `<h2 style='margin-bottom:1rem'>Sent ✔</h2>
+                         <p>Thank you for reaching out🤝, I'll be in touch</p>`
+        contactSectionContainer.innerHTML = content;
+        contactSectionContainer.style.textAlign = "center";
+        contactSectionContainer.style.paddingBottom = "4rem";
       }).catch(err => {
-        console.log("Failed...", err)
+        alert("Failed...", err)
       })
     })
   </script>
