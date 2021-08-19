@@ -287,7 +287,7 @@
     <section class="section contact-me" id="contact-me">
       <article class="mycontainer">
         <h2 class="">Contact Me</h2>
-        <form action="#" class="contact-me__form">
+        <form class="contact-me__form">
           <section class="form-element">
             <label for="name">Name</label>
             <input type="text" id="name" name="name">
@@ -479,6 +479,40 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_SH4J8t0JF2QEaDKCvIKk8");
+    })();
+
+    const contactForm = document.querySelector(".contact-me__form");
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const {
+        name: {
+          value: name
+        },
+        email: {
+          value: email
+        },
+        message: {
+          value: message
+        }
+      } = this;
+
+      emailjs.send("service_portfolio", "template_contact", {
+        from_name: name,
+        email: email,
+        message: message
+      }, "user_SH4J8t0JF2QEaDKCvIKk8").then(response => {
+        contactForm.reset()
+        console.log("Success", response.status, response.text)
+      }).catch(err => {
+        console.log("Failed...", err)
+      })
+    })
+  </script>
 
   <script>
     const navbar = document.querySelector('.navbar');
