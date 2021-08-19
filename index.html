@@ -14,7 +14,6 @@
     content="Ammiel, Yawson, Ammiel Gyan, Gyan Yawson, Ammiel Yawson, Software Developer, Ammiel's projects, Ammiel Gyan Yawson, projects, ammduncan">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  <meta name="revisit-after" content="7 days">
   <meta name="author" content="Ammiel Yawson">
   <meta name="description"
     content="Hi, I'm Ammiel Yawson. A Frontend + Django Developer. I design and build web applications that provide an enjoyable experience.">
@@ -489,17 +488,9 @@
     const contactForm = document.querySelector(".contact-me__form");
     contactForm.addEventListener("submit", function (event) {
       event.preventDefault();
-      const {
-        name: {
-          value: name
-        },
-        email: {
-          value: email
-        },
-        message: {
-          value: message
-        }
-      } = this;
+      const name = this.name.value
+      const email = this.email.value
+      const message = this.message.value
 
       emailjs.send("service_portfolio", "template_contact", {
         from_name: name,
@@ -510,7 +501,7 @@
         console.log("Success", response.status, response.text)
         const contactSectionContainer = document.querySelector(".contact-me .mycontainer")
         const content = `<h2 style='margin-bottom:1rem'>Sent ✔</h2>
-                         <p>Thank you for reaching out🤝, I'll be in touch</p>`
+                         <p>Thank you for reaching out🤝, I'll be in touch.</p>`
         contactSectionContainer.innerHTML = content;
         contactSectionContainer.style.textAlign = "center";
         contactSectionContainer.style.paddingBottom = "4rem";
