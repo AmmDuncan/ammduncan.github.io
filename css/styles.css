@@ -804,6 +804,7 @@ p {
   }
   .col-2 .content {
     margin: auto;
+    padding: 3rem 0rem 3.5rem 0rem;
   }
 }
 @media (max-width: 820px) {
@@ -817,6 +818,7 @@ p {
   }
   .col-2 .content {
     margin: auto;
+    padding: 3rem 0rem 3.5rem 0rem;
   }
   .col-2 .content h3,
 .col-2 .content h1,
