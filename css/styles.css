@@ -698,7 +698,8 @@ p {
   font-size: 1.333rem;
   letter-spacing: 0;
 }
-.col-2 .content h2, .col-2 .content h1 {
+.col-2 .content h2,
+.col-2 .content h1 {
   margin-left: -0.125rem;
   margin-bottom: 1.5rem;
   text-align: left;
@@ -820,6 +821,7 @@ p {
   }
   .col-2 .content h3,
 .col-2 .content h1,
+.col-2 .content h2,
 .col-2 .content p {
     text-align: center;
   }
