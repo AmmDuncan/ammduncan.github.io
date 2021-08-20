@@ -1887,6 +1887,10 @@ footer .bar .social__link:hover {
 .about__header .skill__list li .icon {
   margin-right: 0.4rem;
 }
+.about__header .skill__list li .icon svg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
 @media (max-width: 575px) {
   .about__header .skill__list li {
     padding: 0.45rem 0.5rem;

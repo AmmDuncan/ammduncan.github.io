@@ -127,6 +127,11 @@
 
         .icon {
           margin-right: 0.4rem;
+
+          svg {
+            width: 2.25rem;
+            height: 2.25rem;
+          }
         }
 
         @media (max-width: 575px) {
