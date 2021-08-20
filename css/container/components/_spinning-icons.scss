@@ -41,7 +41,7 @@
     position: absolute;
     width: 45%;
     animation: spinright 30s infinite linear reverse;
-    filter: saturate(0) brightness(0.95);
+    // filter: saturate(0) brightness(0.95);
 
     &:hover {
       filter: saturate(1);
@@ -51,18 +51,22 @@
       top: -20%;
       left: 27.5%;
     }
+
     &:nth-of-type(2) {
       top: 15%;
       left: -20%;
     }
+
     &:nth-of-type(3) {
       bottom: -12%;
       left: -2%;
     }
+
     &:nth-of-type(4) {
       bottom: -12%;
       right: -2%;
     }
+
     &:nth-of-type(5) {
       top: 12%;
       right: -20%;
@@ -79,6 +83,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

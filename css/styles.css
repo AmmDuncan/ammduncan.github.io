@@ -772,7 +772,6 @@ p {
 .col-2 .illustration .icon {
   max-width: 10rem;
   margin-left: -2rem;
-  filter: saturate(0) brightness(0.95);
 }
 .col-2 .illustration .icon:hover {
   filter: saturate(1);
@@ -840,8 +839,8 @@ p {
     height: 37.5vw;
   }
   .col-2 .illustration .details .icon {
-    width: 20%;
-    max-width: 6rem;
+    width: 22.5%;
+    max-width: 8rem;
     margin-left: 0rem;
   }
   .col-2 .illustration .details .plus-sign {
@@ -893,7 +892,6 @@ p {
   position: absolute;
   width: 45%;
   animation: spinright 30s infinite linear reverse;
-  filter: saturate(0) brightness(0.95);
 }
 .spinning-icons img:hover {
   filter: saturate(1);
@@ -1319,7 +1317,11 @@ p {
   }
 }
 .work.dev {
-  margin-top: 1rem;
+  margin-top: 0;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background: #eeebfa;
+  box-shadow: 0 -1rem 1rem -0.35rem inset rgba(52, 4, 178, 0.05);
 }
 
 /* ======================================================================
@@ -1888,7 +1890,7 @@ footer .bar .social__link:hover {
 @media (max-width: 575px) {
   .about__header .skill__list li {
     padding: 0.45rem 0.5rem;
-    font-size: 12px;
+    font-size: 14px;
   }
   .about__header .skill__list li .icon {
     display: inline-flex;

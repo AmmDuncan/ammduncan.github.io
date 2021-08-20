@@ -99,6 +99,7 @@ p {
   @media (max-width: $tab-lg) {
     font-size: 1.2rem;
   }
+
   @media (max-width: $mob-md) {
     font-size: 18px;
   }
@@ -297,6 +298,7 @@ p {
     }
   }
 }
+
 .choose-me__content .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -359,6 +361,7 @@ p {
     @media (max-width: $desk-sm) {
       row-gap: 1rem;
     }
+
     @media (max-width: $tab-md) {
       grid-template-rows: 7rem minmax(0.8rem, auto) minmax(3rem, auto);
     }
@@ -408,6 +411,7 @@ p {
  * ======================================================================*/
 .work {
   margin-top: 8rem;
+
 
   &__content {
     display: flex;
@@ -471,7 +475,11 @@ p {
   }
 
   &.dev {
-    margin-top: 1rem;
+    margin-top: 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background: #eeebfa;
+    box-shadow: 0 -1rem 1rem -.35rem inset rgba($color-primary-dark, .05);
   }
 }
 

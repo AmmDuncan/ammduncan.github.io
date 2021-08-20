@@ -20,11 +20,12 @@
       padding: 3.5rem 0.5rem;
     }
   }
+
   &__body {
     margin: 4rem auto;
   }
 
-  .skill-list > * {
+  .skill-list>* {
     box-sizing: border-box;
 
     @media (max-width: 575px) {
@@ -103,9 +104,11 @@
 
   .skill {
     margin-top: 1.25rem;
+
     &__name {
       font-weight: 500;
     }
+
     &__list {
       margin-top: 0.5rem;
 
@@ -128,7 +131,7 @@
 
         @media (max-width: 575px) {
           padding: 0.45rem 0.5rem;
-          font-size: 12px;
+          font-size: 14px;
 
           .icon {
             display: inline-flex;
