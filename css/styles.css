@@ -659,7 +659,7 @@ p {
   box-sizing: border-box;
   padding: 6.125rem 1rem 1.5rem;
   background: #6c56db;
-  background: #eeebfa;
+  background: #f3f1fa;
 }
 .header.dev .hero {
   box-sizing: border-box;
@@ -1320,7 +1320,7 @@ p {
   margin-top: 0;
   padding-top: 5rem;
   padding-bottom: 3rem;
-  background: #eeebfa;
+  background: #f3f1fa;
   box-shadow: 0 -1rem 1rem -0.35rem inset rgba(52, 4, 178, 0.05);
 }
 
