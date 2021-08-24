@@ -1,7 +1,7 @@
 .what-i-do {
   background: #ffffff;
   padding-top: 8rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .what-i-do__content {
@@ -10,7 +10,7 @@
 
   h2 {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
 
     &:after {
       left: 50%;
@@ -33,14 +33,12 @@
     // margin-bottom: 5rem;
 
     .text {
-      // max-width: 35rem;
       box-sizing: border-box;
       flex-basis: 50%;
       display: flex;
       flex-flow: column;
       justify-content: center;
-      padding: 3rem;
-      border: 1px solid rgba($color-primary-light, 0.8);
+      padding: 0 3rem;
       line-height: 1.6;
 
       h3 {
@@ -68,8 +66,8 @@
       box-sizing: border-box;
       position: relative;
       flex-basis: 50%;
-      box-shadow: 0.35rem 0.35rem 0.85rem inset rgba(0, 0, 0, 0.15);
-      background: rgba($color-text, 0.8);
+      // box-shadow: 0.35rem 0.35rem 0.85rem inset rgba(0, 0, 0, 0.15);
+      // background: rgba($color-text, 0.8);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -77,9 +75,9 @@
       img {
         object-fit: contain;
         object-position: center;
-        width: 80%;
+        width: 90%;
         height: auto;
-        max-height: 24rem;
+        max-height: 26rem;
         margin-top: 2rem;
       }
     }
@@ -92,8 +90,8 @@
       margin-right: auto;
 
       .text {
-        padding: 2.5rem 0;
-        order: 2;
+        padding: 0.5rem 0;
+        order: 1;
         border: 0;
 
         h3 {
@@ -102,12 +100,17 @@
       }
 
       .img {
-        margin-top: 2.75rem;
-        padding-top: 2rem;
+        margin-top: -2.75rem;
+        // padding-top: 2rem;
         aspect-ratio: 9/5.25;
-        max-height: 18rem;
+        max-height: 24rem;
         border-radius: 0.5rem;
-        order: 1;
+        order: 2;
+
+        img {
+          width: auto;
+          margin-top: 0;
+        }
       }
     }
 
@@ -118,12 +121,13 @@
         font-size: $font-size-h3-sm;
         letter-spacing: -0.025rem;
       }
+
       .img {
-        padding-top: 2rem;
-        max-height: 15rem;
+        max-height: 20rem;
+        padding-bottom: 2rem;
 
         img {
-          height: 115%;
+          height: 105%;
         }
       }
     }
@@ -140,6 +144,7 @@
           max-width: 325px;
         }
       }
+
       .img {
         order: -1;
         display: flex;
@@ -149,20 +154,24 @@
 
       @media screen and (max-width: 800px) {
         .text {
-          // order: 1;
+          order: 1;
 
           h3 {
             max-width: 360px;
           }
         }
+
+        .img {
+          max-height: 20rem;
+          order: 2;
+        }
+      }
+
+      @media screen and (max-width: $mob-lg) {
         .img {
           max-height: 20rem;
         }
-      }
-      @media screen and (max-width: $mob-lg) {
-        .img {
-          max-height: 18rem;
-        }
+
         .text {
           h3 {
             width: 100%;
@@ -173,7 +182,7 @@
 
       @media screen and (max-width: $mob-md) {
         .img {
-          max-height: 15rem;
+          max-height: 20rem;
 
           img {
             max-height: 20rem;
@@ -200,6 +209,7 @@
       }
     }
   }
+
   @media screen and (max-width: $mob-lg) {
     h2 {
       margin-bottom: 2rem;

@@ -937,7 +937,7 @@ p {
 .what-i-do {
   background: #ffffff;
   padding-top: 8rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .what-i-do__content {
@@ -945,7 +945,7 @@ p {
 }
 .what-i-do__content h2 {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
 }
 .what-i-do__content h2:after {
   left: 50%;
@@ -966,8 +966,7 @@ p {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding: 3rem;
-  border: 1px solid rgba(222, 214, 241, 0.8);
+  padding: 0 3rem;
   line-height: 1.6;
 }
 .what-i-do__content .child .text h3 {
@@ -990,8 +989,6 @@ p {
   box-sizing: border-box;
   position: relative;
   flex-basis: 50%;
-  box-shadow: 0.35rem 0.35rem 0.85rem inset rgba(0, 0, 0, 0.15);
-  background: rgba(51, 46, 75, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -999,9 +996,9 @@ p {
 .what-i-do__content .child .img img {
   object-fit: contain;
   object-position: center;
-  width: 80%;
+  width: 90%;
   height: auto;
-  max-height: 24rem;
+  max-height: 26rem;
   margin-top: 2rem;
 }
 @media screen and (max-width: 800px) {
@@ -1013,20 +1010,23 @@ p {
     margin-right: auto;
   }
   .what-i-do__content .child .text {
-    padding: 2.5rem 0;
-    order: 2;
+    padding: 0.5rem 0;
+    order: 1;
     border: 0;
   }
   .what-i-do__content .child .text h3 {
     max-width: 340px;
   }
   .what-i-do__content .child .img {
-    margin-top: 2.75rem;
-    padding-top: 2rem;
+    margin-top: -2.75rem;
     aspect-ratio: 9/5.25;
-    max-height: 18rem;
+    max-height: 24rem;
     border-radius: 0.5rem;
-    order: 1;
+    order: 2;
+  }
+  .what-i-do__content .child .img img {
+    width: auto;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1037,11 +1037,11 @@ p {
     letter-spacing: -0.025rem;
   }
   .what-i-do__content .child .img {
-    padding-top: 2rem;
-    max-height: 15rem;
+    max-height: 20rem;
+    padding-bottom: 2rem;
   }
   .what-i-do__content .child .img img {
-    height: 115%;
+    height: 105%;
   }
 }
 .what-i-do__content .dynamic-sites .child .text {
@@ -1057,16 +1057,20 @@ p {
   justify-content: center;
 }
 @media screen and (max-width: 800px) {
+  .what-i-do__content .dynamic-sites .child .text {
+    order: 1;
+  }
   .what-i-do__content .dynamic-sites .child .text h3 {
     max-width: 360px;
   }
   .what-i-do__content .dynamic-sites .child .img {
     max-height: 20rem;
+    order: 2;
   }
 }
 @media screen and (max-width: 575px) {
   .what-i-do__content .dynamic-sites .child .img {
-    max-height: 18rem;
+    max-height: 20rem;
   }
   .what-i-do__content .dynamic-sites .child .text h3 {
     width: 100%;
@@ -1075,7 +1079,7 @@ p {
 }
 @media screen and (max-width: 480px) {
   .what-i-do__content .dynamic-sites .child .img {
-    max-height: 15rem;
+    max-height: 20rem;
   }
   .what-i-do__content .dynamic-sites .child .img img {
     max-height: 20rem;
