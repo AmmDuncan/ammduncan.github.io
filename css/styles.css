@@ -1046,6 +1046,14 @@ p {
     height: 105%;
   }
 }
+@media screen and (max-width: 480px) {
+  .what-i-do__content .child .img {
+    max-height: 20rem;
+  }
+  .what-i-do__content .child .img img {
+    max-height: 20rem;
+  }
+}
 .what-i-do__content .dynamic-sites .child .text {
   order: 1;
 }

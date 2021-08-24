@@ -133,6 +133,17 @@
         }
       }
     }
+
+    @media screen and (max-width: $mob-md) {
+      .img {
+        max-height: 20rem;
+
+        img {
+          max-height: 20rem;
+        }
+      }
+    }
+
   }
 
   .dynamic-sites {
