@@ -30,6 +30,8 @@
   .child {
     display: flex;
     justify-content: space-between;
+    max-width: 1060px;
+    margin: auto;
     // margin-bottom: 5rem;
 
     .text {

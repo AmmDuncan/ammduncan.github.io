@@ -959,6 +959,8 @@ p {
 .what-i-do__content .child {
   display: flex;
   justify-content: space-between;
+  max-width: 1060px;
+  margin: auto;
 }
 .what-i-do__content .child .text {
   box-sizing: border-box;
