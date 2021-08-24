@@ -749,16 +749,6 @@ p {
   align-self: center;
   position: relative;
 }
-.col-2 .illustration:before {
-  content: "Hover on any icon";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  opacity: 0.4;
-}
-.col-2 .illustration:hover:before {
-  opacity: 1;
-}
 .col-2 .illustration .details {
   display: flex;
   flex-flow: row nowrap;

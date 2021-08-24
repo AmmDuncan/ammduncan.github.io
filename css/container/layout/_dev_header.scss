@@ -108,20 +108,6 @@
     align-self: center;
     position: relative;
 
-    &:before {
-      content: "Hover on any icon";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      opacity: 0.4;
-    }
-
-    &:hover {
-      &:before {
-        opacity: 1;
-      }
-    }
-
     .details {
       display: flex;
       flex-flow: row nowrap;
