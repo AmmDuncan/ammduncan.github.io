@@ -1749,8 +1749,8 @@ footer .bar .social__link:hover {
   width: 100%;
   overflow: hidden;
   padding: 0.35rem;
-  border-radius: 1rem;
-  box-shadow: 0 0.45rem 0.5rem -0.005rem rgba(51, 46, 75, 0.15), 0 0.15rem 1.5rem rgba(51, 46, 75, 0.05);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.45rem 0.5rem -0.005rem rgba(51, 46, 75, 0.05), 0 0.25rem 1rem rgba(51, 46, 75, 0.05);
   background: rgba(255, 255, 255, 0.75);
   transition: 0.15s ease-out;
   cursor: pointer;
@@ -1758,7 +1758,7 @@ footer .bar .social__link:hover {
 }
 .project-card__image {
   width: 100%;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   object-fit: cover;
   object-position: center top;
 }
@@ -1793,7 +1793,7 @@ footer .bar .social__link:hover {
 }
 .project-card:hover {
   transform: scale(1.0125) translateY(-0.45rem);
-  box-shadow: 0 1.75rem 2rem -0.75rem rgba(51, 46, 75, 0.2), 0 0.25rem 0.25rem rgba(51, 46, 75, 0.035);
+  box-shadow: 0 1.75rem 2rem -0.75rem rgba(51, 46, 75, 0.15), 0 0.5rem 0.5rem -0.075rem rgba(51, 46, 75, 0.035);
 }
 .project-card:hover a {
   text-decoration: underline;
