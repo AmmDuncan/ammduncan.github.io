@@ -96,7 +96,7 @@
       .text {
         padding: 0.5rem 0;
         order: 1;
-        border: 0;
+        border: none;
 
         h3 {
           max-width: 340px;
@@ -175,6 +175,7 @@
       @media screen and (max-width: 800px) {
         .text {
           order: 1;
+          border: none;
 
           h3 {
             max-width: 360px;

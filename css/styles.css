@@ -1016,7 +1016,7 @@ p {
   .what-i-do__content .child .text {
     padding: 0.5rem 0;
     order: 1;
-    border: 0;
+    border: none;
   }
   .what-i-do__content .child .text h3 {
     max-width: 340px;
@@ -1078,6 +1078,7 @@ p {
 @media screen and (max-width: 800px) {
   .what-i-do__content .dynamic-sites .child .text {
     order: 1;
+    border: none;
   }
   .what-i-do__content .dynamic-sites .child .text h3 {
     max-width: 360px;
