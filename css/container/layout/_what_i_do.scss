@@ -108,7 +108,7 @@
         margin-bottom: 2.5rem;
         // padding-top: 2rem;
         aspect-ratio: 9/5.25;
-        max-height: 22rem;
+        max-height: 26rem;
         border-radius: 0.5rem;
         order: 2;
 
@@ -128,12 +128,13 @@
       }
 
       .img {
-        max-height: 20rem;
-        padding-bottom: 2rem;
+        max-height: 24rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
 
         img {
-          height: 105%;
-          margin-top: -3rem;
+          height: 100%;
+          margin-top: -1rem;
         }
       }
     }

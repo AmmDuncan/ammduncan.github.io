@@ -1015,7 +1015,7 @@ p {
     margin-top: -3.5rem;
     margin-bottom: 2.5rem;
     aspect-ratio: 9/5.25;
-    max-height: 22rem;
+    max-height: 26rem;
     border-radius: 0.5rem;
     order: 2;
   }
@@ -1032,12 +1032,13 @@ p {
     letter-spacing: -0.025rem;
   }
   .what-i-do__content .child .img {
-    max-height: 20rem;
-    padding-bottom: 2rem;
+    max-height: 24rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
   }
   .what-i-do__content .child .img img {
-    height: 105%;
-    margin-top: -3rem;
+    height: 100%;
+    margin-top: -1rem;
   }
 }
 @media screen and (max-width: 480px) {
