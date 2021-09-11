@@ -1,6 +1,6 @@
 # My portfolio website
 
-Built with Vanilla Js, HTML, CSS/SCSS.
+Built with Vanilla Js, HTML, CSS/SCSS. [Live site](https://ammielyawson.com).
 
 #### Notable features
 
