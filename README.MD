@@ -2,6 +2,9 @@
 
 Built with Vanilla Js, HTML, CSS/SCSS. [Live site](https://ammielyawson.com).
 
+Fonts Used: **Poppins and Sora**
+Primary Color: <span style="color: #5222d0; font-weight: 900">#5222d0</span>
+
 #### Notable features
 
 - Responsive and interactive
