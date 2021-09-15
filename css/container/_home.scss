@@ -473,10 +473,13 @@ p {
   }
 
   &.dev {
+    box-sizing: border-box;
     margin-top: 0;
     padding-top: 5rem;
     padding-bottom: 3rem;
-    background: #f3f1fa;
+    padding: 5rem 1rem 3rem;
+    background: #faf9fa;
+    // background: #f3f1fa;
     box-shadow: 0 -1rem 1rem -.35rem inset rgba($color-primary-dark, .05);
   }
 }

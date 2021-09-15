@@ -7,10 +7,10 @@
   display: flex;
   align-items: stretch;
   box-sizing: border-box;
-  padding: 6.55rem 1rem 1.5rem;
+  padding: 6.65rem 1rem 1.5rem;
 
   background: #6c56db;
-  background: #f3f1fa;
+  background: #faf9fa;
 
   .hero {
     box-sizing: border-box;
@@ -47,7 +47,7 @@
     margin: 0;
 
     h3 {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
       text-align: left;
       font-size: $font-size-body-larger;
       letter-spacing: 0;
@@ -56,16 +56,17 @@
     h2,
     h1 {
       margin-left: -0.125rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
       text-align: left;
-      line-height: 90%;
-      letter-spacing: -4%;
+      line-height: 97.5%;
+      letter-spacing: -.15rem;
       text-transform: uppercase;
     }
 
     p {
       max-width: 24rem;
       margin-bottom: 2rem;
+      line-height: 1.75;
     }
 
     .ctas {
@@ -73,8 +74,8 @@
       flex-flow: row wrap;
 
       .btn {
-        &:first-child {
-          @media (max-width: $tab-lg) {
+        &--primary {
+          @media (max-width: $desk-smd) {
             margin-right: 0rem;
             padding-left: 1rem;
             margin-bottom: 0.5rem;
@@ -99,8 +100,31 @@
       }
     }
 
+    @media (max-width: $tab-lg) {
+      h3 {
+        margin-bottom: 2.125rem;
+      }
+
+      h1,
+      h2 {
+        margin-bottom: 2.125rem;
+        ;
+      }
+
+      p {
+        max-width: 23rem;
+      }
+    }
+
     @media (max-width: $mob-lg) {
       padding-left: 0;
+
+      h1,
+      h2 {
+        font-size: $font-size-h1;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 
@@ -190,26 +214,26 @@
       position: relative;
 
       .details {
-        flex-flow: row nowrap;
+        // flex-flow: row nowrap;
         justify-content: space-around;
-        margin-right: -2rem;
+        // margin-right: -2rem;
         // padding-left: 2rem;
 
-        .spinning-icons {
-          width: 37.5vw;
-          height: 37.5vw;
-        }
+        // .spinning-icons {
+        // width: 37.5vw;
+        // height: 37.5vw;
+        // }
 
         .icon {
-          width: 22.5%;
+          width: 34.5%;
           max-width: 8rem;
           margin-left: 0rem;
         }
 
         .plus-sign {
-          padding-top: 1rem;
-          padding-left: 1.5rem;
-          font-size: $font-size-h2;
+          padding-top: 1.85rem;
+          padding-left: 1.25rem;
+          // font-size: $font-size-h2;
         }
       }
     }
