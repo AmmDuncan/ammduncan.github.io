@@ -77,7 +77,7 @@
   font-weight: 400;
 
   &__brand__container {
-    height: 4rem;
+    height: 4.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -177,8 +177,7 @@
     }
   }
 
-  @media (max-width: $tab-md) {
-  }
+  @media (max-width: $tab-md) {}
 }
 
 /* -------------------------------------
@@ -240,6 +239,7 @@
 
     &__opener {
       height: 2.05rem;
+
       .bar {
         // margin-right: 0.5rem;
 
@@ -266,6 +266,7 @@
   0% {
     transform: translateY(-3rem);
   }
+
   100% {
     transform: translateY(0);
   }
