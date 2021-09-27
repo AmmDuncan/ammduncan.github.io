@@ -2,16 +2,14 @@
   display: flex;
   align-items: center;
   // padding-bottom: 25vh;
-  min-height: 100vh;
+  min-height: 736px;
   height: 620px;
   // max-height: 800px;
   padding: 7rem 0;
   box-sizing: border-box;
-  background-image: radial-gradient(
-      circle,
+  background-image: radial-gradient(circle,
       rgba($color-primary-light, 0.4) 45%,
-      rgba($color-primary-light, 0.7)
-    ),
+      rgba($color-primary-light, 0.7)),
     url("../img/herobg-center.png");
   background-size: cover;
   background-position: center center;
@@ -20,11 +18,9 @@
   @media (max-width: $tab-sm) {
     // padding-bottom: 20vh;
     background-position: center top;
-    background-image: radial-gradient(
-        circle,
+    background-image: radial-gradient(circle,
         rgba($color-primary-light, 0.4) 45%,
-        rgba($color-primary-light, 0.7)
-      ),
+        rgba($color-primary-light, 0.7)),
       url("../img/herobg-center-mob.jpg");
   }
 }
@@ -52,13 +48,15 @@
       font-size: $font-size-body-larger;
       margin-bottom: 1.25rem;
     }
+
     @media (max-width: $mob-md) {
       font-size: 1.25rem;
       // margin-bottom: 1.25rem;
     }
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     margin-bottom: 1.25rem;
     font-size: $font-size-display;
     font-weight: 600;
@@ -134,6 +132,7 @@
   @media (min-width: $desk-md) {
     max-width: 48rem;
   }
+
   @media screen and (max-width: $tab-md) {
     max-width: 35rem;
     // padding-top: 17.5vh;
