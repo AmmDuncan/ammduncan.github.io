@@ -671,7 +671,7 @@ p {
   display: flex;
   align-items: stretch;
   box-sizing: border-box;
-  padding: 6rem 1rem 1.5rem;
+  padding: 6.65rem 1rem 1.5rem;
   background: #6c56db;
   background: #faf9fa;
 }
@@ -686,7 +686,7 @@ p {
   max-width: 100%;
   display: flex;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 4rem rgba(52, 4, 178, 0.1), 0 0.125rem 0.35rem rgba(52, 4, 178, 0.1);
   background: #fefeff;
