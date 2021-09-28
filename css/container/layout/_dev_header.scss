@@ -1,7 +1,7 @@
 .header.dev {
   position: relative;
   max-height: 100%;
-  min-height: 736px;
+  min-height: 100vh;
   height: 100%;
 
   display: flex;
@@ -11,6 +11,10 @@
 
   background: #6c56db;
   background: #faf9fa;
+
+  @media screen and (min-height: 780px) {
+    min-height: 736px;
+  }
 
   .hero {
     box-sizing: border-box;

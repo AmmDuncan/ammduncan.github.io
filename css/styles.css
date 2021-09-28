@@ -521,7 +521,7 @@ p {
 .header {
   display: flex;
   align-items: center;
-  min-height: 736px;
+  min-height: 100vh;
   height: 620px;
   padding: 7rem 0;
   box-sizing: border-box;
@@ -529,6 +529,11 @@ p {
   background-size: cover;
   background-position: center center;
   transition: 0.4s ease-in-out;
+}
+@media screen and (min-height: 780px) {
+  .header {
+    min-height: 736px;
+  }
 }
 @media (max-width: 640px) {
   .header {
@@ -661,7 +666,7 @@ p {
 .header.dev {
   position: relative;
   max-height: 100%;
-  min-height: 736px;
+  min-height: 100vh;
   height: 100%;
   display: flex;
   align-items: stretch;
@@ -669,6 +674,11 @@ p {
   padding: 6.65rem 1rem 1.5rem;
   background: #6c56db;
   background: #faf9fa;
+}
+@media screen and (min-height: 780px) {
+  .header.dev {
+    min-height: 736px;
+  }
 }
 .header.dev .hero {
   box-sizing: border-box;
