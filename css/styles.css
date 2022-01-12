@@ -1721,6 +1721,7 @@ footer .bar .social__link:hover {
   text-align: center;
 }
 .projects-header h1 {
+  text-align: left;
   margin-bottom: 1.125rem;
   font-size: 3.157rem;
   font-weight: 600;
