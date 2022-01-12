@@ -1771,6 +1771,9 @@ footer .bar .social__link:hover {
     }
   */
 }
+.project-cards .mycontainer {
+  max-width: 1100px;
+}
 @media screen and (max-width: 767px) {
   .project-cards {
     margin-left: auto;
