@@ -6,8 +6,8 @@
   z-index: 1000;
 
   /* display and box-model */
-  border-bottom: 1px solid rgba($color-primary-lighter, 0.15);
-  // box-shadow: 0 0.8rem 1.5rem rgba($color-primary-dark, 0.1);
+  // border-bottom: 1px solid rgba($color-primary-lighter, 0.15);
+  box-shadow: 0 0.8rem 1rem rgba($color-text, 0.05);
 
   /* other */
   animation: dropdown 0.3s ease-out alternate;
